@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="?android:attr/listPreferredItemHeight"
+    android:padding="5dip" android:background="#eee9e9">
+    
+    <!-- Player name -->
+    <TextView
+        android:id="@+id/player_name_playerStat"
+        android:layout_width="100dip"
+        android:layout_height="fill_parent"
+        android:layout_marginRight="30dip"
+        android:gravity="center_vertical"
+        android:textStyle="bold"
+        android:ellipsize="marquee"
+        android:singleLine="true"
+    />
+    
+    <View
+ 		android:layout_width="1dip"
+ 		android:layout_height="match_parent"
+ 		android:background="@android:color/black"
+ 		android:layout_marginRight="2dip" />
+				
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+        
+        <!-- First line -->
+         <LinearLayout
+       		 android:layout_width="fill_parent"
+        	 android:layout_height="wrap_content">
+        	 
+        	 <!-- Goals -->
+       		<TextView
+            	android:id="@+id/goals_playerStat"
+            	android:layout_width="fill_parent"
+            	android:layout_height="wrap_content"
+            	android:layout_weight="1"
+            	android:ellipsize="marquee"
+            	android:singleLine="true"
+            	android:layout_marginRight="2dip"
+        	/>
+        	
+        	<View
+ 				android:layout_width="1dip"
+ 				android:layout_height="match_parent"
+ 				android:background="@android:color/black"
+ 				android:layout_marginRight="2dip" />
+        	
+        	<!-- Points -->
+        	<TextView
+            	android:id="@+id/points_playerStat"
+            	android:layout_width="fill_parent"
+            	android:layout_height="wrap_content"
+            	android:layout_weight="1"
+            	android:gravity="left"
+            	android:ellipsize="marquee"
+            	android:singleLine="true"
+            	android:layout_marginRight="2dip"
+        	/>
+        	
+        </LinearLayout>
+        
+        <!-- Second line -->
+        <LinearLayout
+        	android:layout_width="fill_parent"
+        	android:layout_height="wrap_content">
+        	
+        	<!-- Tries -->
+        	<TextView
+            	android:id="@+id/tries_playerStat"
+            	android:layout_width="fill_parent"
+            	android:layout_height="wrap_content"
+            	android:layout_weight="1"
+            	android:ellipsize="marquee"
+            	android:singleLine="true"
+            	android:layout_marginRight="2dip"
+        	/>
+        	
+        	<View
+ 				android:layout_width="1dip"
+ 				android:layout_height="match_parent"
+ 				android:background="@android:color/black"
+ 				android:layout_marginRight="2dip" />
+        	
+        	<!-- Conversions -->
+        	<TextView
+            	android:id="@+id/conversions_playerStat"
+            	android:layout_width="fill_parent"
+            	android:layout_height="wrap_content"
+            	android:layout_weight="1"
+            	android:gravity="left"
+            	android:ellipsize="marquee"
+            	android:singleLine="true"
+            	android:layout_marginRight="2dip"
+        	/>
+        	
+        </LinearLayout>
+        
+        <!-- Third line -->
+        <LinearLayout
+        	android:layout_width="fill_parent"
+        	android:layout_height="wrap_content">
+        	
+        	<!-- Drop goals -->
+        	<TextView
+            	android:id="@+id/dropGoals_playerStat"
+            	android:layout_width="fill_parent"
+            	android:layout_height="wrap_content"
+            	android:layout_weight="1"
+            	android:ellipsize="marquee"
+            	android:singleLine="true"
+            	android:layout_marginRight="2dip"
+        	/>
+        	
+        	<View
+ 				android:layout_width="1dip"
+ 				android:layout_height="match_parent"
+ 				android:background="@android:color/black"
+ 				android:layout_marginRight="2dip" />
+        	
+        	<!-- Penalties -->
+        	<TextView
+            	android:id="@+id/penalties_playerStat"
+            	android:layout_width="fill_parent"
+            	android:layout_height="wrap_content"
+            	android:layout_weight="1"
+            	android:gravity="left"
+            	android:ellipsize="marquee"
+            	android:singleLine="true"
+            	android:layout_marginRight="2dip"
+        	/>
+        	
+        </LinearLayout>
+      
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+   android:orientation="vertical"
+   android:layout_width="fill_parent"
+   android:layout_height="fill_parent"
+   android:background="#eee9e9"
+   >
+   
+   	 <!-- Include Action Bar -->
+     <include layout="@layout/actionbar_layout"/>
+    
+<Spinner android:id="@+id/sportSpinnerLeaderboard"
+			android:layout_width="match_parent" android:prompt="@string/SportPrompt"
+			android:layout_height="wrap_content"></Spinner>
+
+<!-- Listview Header -->	
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+   android:layout_width="fill_parent"
+   android:layout_height="20dip"
+   android:background="#009ACD">
+   
+      <!-- Leaderboard Rank Position -->
+    <TextView
+       android:layout_width="wrap_content"
+       android:layout_height="fill_parent"
+       android:gravity="left"
+       android:layout_marginRight="15dip"
+       android:textStyle="bold"
+       android:textColor="#ffffffff"
+       android:text="@string/pos"
+   />
+   
+    <!-- Team -->
+    <TextView
+       android:layout_width="fill_parent"
+       android:layout_height="fill_parent"
+       android:gravity="left"
+       android:layout_weight="1"
+       android:textStyle="bold"
+       android:textColor="#ffffffff"
+       android:text="@string/team"
+   />
+   
+    <!-- Points -->
+    <TextView
+       android:layout_width="fill_parent"
+       android:layout_height="fill_parent"
+       android:gravity="right"
+       android:layout_weight="1"
+       android:paddingRight="5dip"
+       android:textStyle="bold"
+       android:textColor="#ffffffff"
+       android:text="@string/points"
+   />
+   
+</LinearLayout>
+   
+<ListView
+    android:id="@+id/android:list"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#eee9e9"
+    />
+<TextView
+    android:id="@+id/android:empty"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:text="@string/nothingToDisplay"/>
+</LinearLayout>

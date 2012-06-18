@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical" android:layout_width="fill_parent"
+	android:layout_height="fill_parent" android:background="#eee9e9">
+
+	 <!-- Include Action Bar -->
+     <include layout="@layout/actionbar_layout"/>
+
+	<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+		android:id="@+id/ScrollView01" android:layout_width="fill_parent"
+		android:layout_height="fill_parent">
+		<LinearLayout android:layout_width="match_parent"
+			android:layout_height="match_parent" android:orientation="vertical">
+
+			<!-- Team 1 Input -->
+			<TextView android:layout_height="wrap_content" android:text="@string/team1TV"
+				android:layout_width="match_parent" android:id="@+id/team1TVGaelic" />
+			<AutoCompleteTextView
+				android:completionThreshold="1" android:layout_height="wrap_content"
+				android:layout_width="match_parent" android:text="@string/Empty"
+				android:textColor="@color/black" android:id="@+id/team1AutoTVGaelic"
+				android:hint="@string/mandatory" />
+
+			<!-- Team 2 Input -->
+			<TextView android:layout_width="match_parent"
+				android:layout_height="wrap_content" android:text="@string/team2TV"
+				android:id="@+id/team2TVGaelic" />
+			<AutoCompleteTextView android:layout_width="match_parent"
+				android:completionThreshold="1" android:layout_height="wrap_content"
+				android:textColor="@color/black" android:text="@string/Empty"
+				android:id="@+id/team2AutoTVGaelic" android:hint="@string/mandatory" />
+
+			<!-- Venue Input -->
+			<TextView android:layout_height="wrap_content"
+				android:layout_width="wrap_content" android:text="@string/VenueString"
+				android:id="@+id/venueTVGaelic" />
+			<AutoCompleteTextView android:layout_width="match_parent"
+				android:completionThreshold="1" android:layout_height="wrap_content"
+				android:textColor="@color/black" android:text="@string/Empty"
+				android:id="@+id/venueAutoTVGaelic" android:hint="@string/optional" />
+
+			<!-- Goal Value Input -->
+			<TextView android:id="@+id/goalValueTVGaelic"
+				android:layout_height="wrap_content" android:layout_width="match_parent"
+				android:text="@string/goalValueString"></TextView>
+			<EditText android:layout_height="wrap_content"  android:inputType="number"
+				android:layout_width="match_parent" android:id="@+id/goalValueETGaelic"
+				android:text="@string/goalValue"></EditText>
+
+			<!-- Point Value Input -->
+			<TextView android:id="@+id/pointValueTVGaelic" 
+				android:layout_height="wrap_content" android:layout_width="wrap_content"
+				android:text="@string/pointValueString"></TextView>
+			<EditText android:layout_height="wrap_content" android:inputType="number"
+				android:layout_width="match_parent" android:id="@+id/pointValueETGaelic"
+				android:text="@string/pointValue"></EditText>
+
+			<!-- Number of players Input -->
+			<TextView android:layout_height="wrap_content"
+				android:layout_width="match_parent" android:text="@string/numOfPlayersString"
+				android:id="@+id/numOfPlayersTVGaelic" />
+			<EditText android:layout_width="match_parent" android:inputType="number"
+				android:layout_height="wrap_content" android:id="@+id/numOfPlayersETGaelic"
+				android:text="@string/numOfPlayersGaelic" />
+
+			<!-- Minutes per half Input -->
+			<TextView android:layout_height="wrap_content"
+				android:text="@string/minutesPerHalfString" android:layout_width="match_parent"
+				android:id="@+id/minutesPerHalfTVGaelic" />
+			<EditText android:layout_width="match_parent" android:inputType="number"
+				android:layout_height="wrap_content" android:id="@+id/minutesPerHalfETGaelic"
+				android:text="@string/minutesPerHalfGaelic" />
+
+			<!-- Referee Name Input -->
+			<TextView android:layout_height="wrap_content" android:text="@string/refereeNameString"
+				android:layout_width="match_parent" android:id="@+id/refereeNameTVGaelic" />
+			<AutoCompleteTextView android:layout_width="match_parent"
+				android:completionThreshold="1" android:layout_height="wrap_content"
+				android:textColor="@color/black" android:id="@+id/refereeNameAutoTVGaelic"
+				android:text="@string/Empty" android:hint="@string/optional"/>
+
+			<!-- Match Type Input -->
+			<RadioGroup android:layout_width="fill_parent"
+				android:layout_height="wrap_content" android:orientation="vertical"
+				android:id="@+id/radioGroupGaelic">
+
+				<TextView android:id="@+id/typeTVGaelic"
+					android:layout_height="wrap_content" android:text="@string/TypeString"
+					android:layout_width="match_parent" />
+				<RadioButton android:layout_width="wrap_content"
+					android:text="@string/friendlyString" android:layout_height="wrap_content"
+					android:id="@+id/friendlyRadioBNGaelic" />
+				<RadioButton android:layout_width="wrap_content"
+					android:text="@string/leagueString" android:id="@+id/leagueRadioBNGaelic"
+					android:layout_height="wrap_content" />
+				<RadioButton android:layout_width="wrap_content"
+					android:text="@string/CupString" android:layout_height="wrap_content"
+					android:id="@+id/cupRadioBNGaelic" />
+			</RadioGroup>
+
+			<!-- League/Cup name Input -->
+			<TextView android:layout_height="wrap_content"
+				android:text="@string/leagueCupNameString" android:layout_width="match_parent"
+				android:id="@+id/leagueCupNameTVGaelic" />
+			<AutoCompleteTextView
+				android:completionThreshold="1" android:layout_height="wrap_content"
+				android:layout_width="match_parent" android:text="@string/Empty"
+				android:textColor="@color/black" android:id="@+id/leagueCupNameAutoTVGaelic" 
+				android:hint="@string/optional"/>
+
+			<!-- Create match button -->
+			<Button android:layout_height="wrap_content"
+				android:layout_width="match_parent" android:id="@+id/createMatchBNGaelic"
+				android:text="@string/createMatchString" />
+
+
+		</LinearLayout>
+	</ScrollView>
+</LinearLayout>

@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical" android:layout_width="fill_parent"
+	android:layout_height="fill_parent" android:background="#eee9e9">
+
+	 <!-- Include Action Bar -->
+     <include layout="@layout/actionbar_layout"/>
+
+	<!-- Horizontal linear layout for displaying teams. -->
+	<LinearLayout android:layout_height="wrap_content"
+		android:layout_width="match_parent" android:background="#D8D8D8">
+
+		<!-- Team 1 name -->
+		<TextView android:text="TextView" android:layout_height="wrap_content"
+			android:layout_width="wrap_content" android:layout_weight="1"
+			android:textStyle="bold" android:textColor="@color/green" android:id="@+id/team1NameTVFM"></TextView>
+
+		<!-- Team 2 name -->
+		<TextView android:text="TextView" android:layout_height="wrap_content"
+			android:layout_width="wrap_content" android:layout_weight="1"
+			android:textStyle="bold" android:textColor="@color/red" android:id="@+id/team2NameTVFM"
+			android:gravity="right"></TextView>
+
+	</LinearLayout>
+
+	<!-- Horizontal linear layout for displaying scores. -->
+	<LinearLayout android:layout_height="wrap_content"
+		android:layout_width="match_parent" android:background="#D8D8D8">
+
+		<!-- Team 1 score -->
+		<TextView android:layout_height="wrap_content"
+			android:layout_width="wrap_content" android:layout_weight="1"
+			android:textStyle="bold" android:id="@+id/team1GoalTVFM"
+			android:text="@string/Empty" android:gravity="center_horizontal"></TextView>
+
+		<!-- Delimiter to separate team scores. -->
+		<TextView android:layout_height="wrap_content"
+			android:layout_width="wrap_content" android:id="@+id/delimiterTVFM"
+			android:layout_weight="1" android:textStyle="bold" android:text="@string/:"
+			android:gravity="center_horizontal"></TextView>
+
+		<!-- Team 2 score -->
+		<TextView android:layout_height="wrap_content"
+			android:layout_width="wrap_content" android:layout_weight="1"
+			android:textStyle="bold" android:id="@+id/team2GoalTVFM"
+			android:text="@string/Empty" android:gravity="center_horizontal"></TextView>
+
+	</LinearLayout>
+
+	<!-- Horizontal linear layout for start,pause and time -->
+	<LinearLayout android:layout_height="wrap_content"
+		android:layout_width="match_parent">
+
+		<!-- Start/resume time button -->
+		<ImageButton android:id="@+id/startButtonFM" android:layout_height="wrap_content"
+			android:text="@string/start" android:layout_width="fill_parent"
+			android:layout_weight="1.5" android:background="@drawable/button_state"
+			android:src="@drawable/play" android:layout_gravity="center_vertical"></ImageButton>
+
+		<!-- Timer -->
+		<Chronometer android:layout_width="fill_parent"
+			android:gravity="center_horizontal" android:layout_height="wrap_content"
+			android:id="@+id/chronometerFM" android:layout_weight="1" />
+
+		<!-- Pause time button -->
+		<ImageButton android:id="@+id/stopButtonFM" android:layout_height="wrap_content"
+			android:text="@string/stop" android:layout_width="fill_parent"
+			android:layout_weight="1.5" android:background="@drawable/button_state"
+			android:src="@drawable/pause" android:layout_gravity="center_vertical"></ImageButton>
+
+	</LinearLayout>
+
+	<TextView android:layout_height="wrap_content"
+		android:layout_width="match_parent" android:id="@+id/matchEventsTVFM"
+		android:text="@string/MatchEvents" android:layout_gravity="center"
+		android:textStyle="bold"></TextView>
+
+	<!-- Horizontal linear layout for match events. -->
+	<LinearLayout android:layout_height="wrap_content"
+		android:layout_width="match_parent">
+
+		<Spinner android:id="@+id/matchEventSpinnerFM"
+			android:layout_width="wrap_content" android:prompt="@string/footballMatchEventPrompt"
+			android:layout_height="wrap_content" android:layout_weight="1"></Spinner>
+		
+		<!-- Add note button -->
+		<ImageButton android:id="@+id/addNoteFM" android:layout_gravity="center"
+			android:layout_height="wrap_content" android:layout_width="wrap_content" 
+			android:background="@drawable/button_state" android:src="@drawable/note"
+			android:layout_weight="1"></ImageButton>
+
+		<!-- UndoEvent button -->
+		<ImageButton android:id="@+id/undoEventButtonFM"
+			android:layout_height="wrap_content" android:layout_width="wrap_content" 
+			android:layout_weight="1.0" android:background="@drawable/button_state"
+			android:src="@drawable/undo" android:layout_gravity="center_vertical"></ImageButton>
+		
+		<!-- Finish Match button -->
+		<ImageButton android:id="@+id/finishMatchFM" android:layout_weight="1"
+			android:layout_height="wrap_content" android:layout_width="wrap_content" 
+			android:background="@drawable/button_state" android:src="@drawable/finish"></ImageButton>
+
+	</LinearLayout>
+
+	<!-- Display Match Information -->
+	<TextView android:layout_height="wrap_content"
+		android:layout_width="match_parent" android:id="@+id/matchEventsTVFM"
+		android:text="@string/matchInfo" android:layout_gravity="center"
+		android:textStyle="bold"></TextView>
+
+	<ScrollView android:layout_width="fill_parent" android:layout_height="fill_parent"
+		android:fadeScrollbars="false">
+
+		<!-- TextView to display match information -->
+		<TextView android:layout_width="fill_parent"
+			android:layout_height="match_parent" android:id="@+id/matchInfoTVFM"
+			android:text="@string/Empty"></TextView>
+
+	</ScrollView>
+	
+
+</LinearLayout>

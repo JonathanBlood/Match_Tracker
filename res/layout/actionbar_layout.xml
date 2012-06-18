@@ -1,0 +1,57 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/TitleBar"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:gravity="left|top"
+    android:orientation="horizontal" >
+
+    <ImageButton
+        android:id="@+id/home_button"
+        style="@style/TitleBarOperation"
+        android:layout_gravity="center"
+        android:layout_marginBottom="4dip"
+        android:layout_marginLeft="4dip"
+        android:layout_marginRight="5dip"
+        android:layout_marginTop="5dip"
+        android:background="@drawable/button_state"
+        android:paddingBottom="3dip"
+        android:src="@drawable/home_def"
+        android:contentDescription="@string/desc" />
+
+    <ImageView
+        android:layout_width="1dp"
+        android:layout_height="fill_parent"
+        android:layout_marginRight="5dip"
+        android:background="@drawable/separator"
+        android:contentDescription="@string/desc" />
+
+    <TextView
+        style="@style/TitleBarText"
+        android:paddingLeft="8dip"
+        android:text="@string/app_name" />
+
+    <ImageButton
+        android:id="@+id/sync_button"
+        style="@style/TitleBarOperation"
+        android:layout_gravity="center"
+        android:layout_marginBottom="4dip"
+        android:layout_marginLeft="4dip"
+        android:layout_marginRight="5dip"
+        android:layout_marginTop="5dip"
+        android:background="@drawable/button_state"
+        android:src="@drawable/sync"
+        android:contentDescription="@string/desc" />
+
+    <ImageButton
+        android:id="@+id/login_button"
+        style="@style/TitleBarOperation"
+        android:layout_gravity="center"
+        android:layout_marginBottom="4dip"
+        android:layout_marginLeft="4dip"
+        android:layout_marginRight="5dip"
+        android:layout_marginTop="5dip"
+        android:background="@drawable/button_state"
+        android:src="@drawable/login" 
+        android:contentDescription="@string/desc"/>
+
+</LinearLayout>

@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+      package="com.jonathanblood.main"
+      android:versionCode="1"
+      android:versionName="1.0"
+      android:installLocation="auto">
+    <uses-permission android:name="android.permission.INTERNET"></uses-permission>
+	<uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"></uses-permission>
+
+	<uses-sdk android:minSdkVersion="4" />
+    <application android:icon="@drawable/icon" 
+    	android:label="@string/app_name"
+    	android:theme="@android:style/Theme.Light">
+    	
+    	<service  android:name="com.android.send.SyncService"  />
+    	
+        <activity android:name="com.android.main.MainMenuActivity"
+                  android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        
+        <activity android:name="com.android.main.MatchActivity"
+			android:label="Match Screen"
+			android:screenOrientation="portrait">
+		</activity>
+		
+		<activity android:name="com.android.main.LoginActivity"
+			android:label="Log in">
+		</activity>
+		
+		<activity android:name="com.android.record.FootballPreMatchInfoActivity"
+			android:label="Pre Match Information - Football">
+		</activity>
+		
+		<activity android:name="com.android.record.GaelicPreMatchInfoActivity"
+			android:label="Pre Match Information - Gaelic Football">
+		</activity>
+		
+		<activity android:name="com.android.record.HurlingPreMatchInfoActivity"
+			android:label="Pre Match Information - Hurling">
+		</activity>
+		
+		<activity android:name="com.android.record.RugbyPreMatchInfoActivity"
+			android:label="Pre Match Information - Rugby">
+		</activity>
+		
+		<activity android:name="com.android.record.FootballMatchActivity"
+			android:label="Match Information Tracker - Football"
+			android:screenOrientation="portrait">
+		</activity>
+		
+		<activity android:name="com.android.record.GaelicMatchActivity"
+			android:label="Match Information Tracker - Gaelic Football"
+			android:screenOrientation="portrait">
+		</activity>
+		
+		<activity android:name="com.android.record.HurlingMatchActivity"
+			android:label="Match Information Tracker - Hurling"
+			android:screenOrientation="portrait">
+		</activity>
+		
+		<activity android:name="com.android.record.RugbyMatchActivity"
+			android:label="Match Information Tracker - Rugby"
+			android:screenOrientation="portrait">
+		</activity>
+		
+		<activity android:name="com.android.statistics.StatisticsMenuActivity"
+			android:label="Statistics Menu">
+		</activity>
+		
+		<activity android:name="com.android.statistics.LeaderboardActivity"
+			android:label="Leaderboard">
+		</activity>
+		
+		<activity android:name="com.android.statistics.PlayerStatsActivity"
+			android:label="Player Statistics">
+		</activity>
+		
+		<activity android:name="com.android.statistics.PreviousMatchesActivity"
+			android:label="Previous Matches">
+		</activity>
+		
+		<activity android:name="com.android.statistics.MatchActivity"
+			android:label="Match">
+		</activity>
+		
+
+    </application>
+</manifest>

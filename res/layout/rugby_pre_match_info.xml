@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical" android:layout_width="fill_parent"
+	android:layout_height="fill_parent" android:background="#eee9e9">
+
+	 <!-- Include Action Bar -->
+     <include layout="@layout/actionbar_layout"/>
+     
+	<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+		android:id="@+id/ScrollView01" android:layout_width="fill_parent"
+		android:layout_height="fill_parent">
+		<LinearLayout android:layout_width="match_parent"
+			android:layout_height="match_parent" android:orientation="vertical">
+
+			<!-- Team 1 input -->
+			<TextView android:layout_height="wrap_content" android:text="@string/team1TV"
+				android:layout_width="match_parent" android:id="@+id/team1TVRugby" />
+			<AutoCompleteTextView
+				android:completionThreshold="1" android:layout_height="wrap_content"
+				android:layout_width="match_parent" android:text="@string/Empty"
+				android:textColor="@color/black" android:id="@+id/team1AutoTVRugby"
+				android:hint="@string/mandatory" />
+
+			<!-- Team 2 input -->
+			<TextView android:layout_width="match_parent"
+				android:layout_height="wrap_content" android:text="@string/team2TV"
+				android:id="@+id/team2TVRugby" />
+			<AutoCompleteTextView android:layout_width="match_parent"
+				android:completionThreshold="1" android:layout_height="wrap_content"
+				android:textColor="@color/black" android:text="@string/Empty"
+				android:id="@+id/team2AutoTVRugby" android:hint="@string/mandatory" />
+
+			<!-- Venue input -->
+			<TextView android:layout_height="wrap_content"
+				android:layout_width="wrap_content" android:text="@string/VenueString"
+				android:id="@+id/venueTVRugby" />
+			<AutoCompleteTextView android:layout_width="match_parent"
+				android:completionThreshold="1" android:layout_height="wrap_content"
+				android:textColor="@color/black" android:text="@string/Empty"
+				android:id="@+id/venueAutoTVRugby"  android:hint="@string/optional"/>
+
+			<!-- Try value input -->
+			<TextView android:layout_height="wrap_content" android:text="@string/tryValueString"
+				android:layout_width="match_parent" android:id="@+id/tryValueTVRugby"></TextView>
+			<EditText android:layout_height="wrap_content" android:inputType="number"
+				android:layout_width="match_parent" android:text="@string/tryValue"
+				android:id="@+id/tryValueETRugby"></EditText>
+
+			<!-- COnversion value input -->
+			<TextView android:id="@+id/conversionValueTVRugby"
+				android:layout_height="wrap_content" android:layout_width="match_parent"
+				android:text="@string/conversionValueString"></TextView>
+			<EditText android:layout_height="wrap_content" android:inputType="number"
+				android:layout_width="match_parent" android:text="@string/conversionValue"
+				android:id="@+id/conversionValueETRugby"></EditText>
+
+			<!-- Penalty value input -->
+			<TextView android:id="@+id/penaltyValueTVRugby"
+				android:layout_height="wrap_content" android:layout_width="match_parent"
+				android:text="@string/penaltyValueString"></TextView>
+			<EditText android:layout_height="wrap_content" android:inputType="number"
+				android:layout_width="match_parent" android:text="@string/penaltyValue"
+				android:id="@+id/penaltyValueETRugby"></EditText>
+
+			<!-- Drop goal value input -->
+			<TextView android:id="@+id/dropGoalValueTVRugby"
+				android:layout_height="wrap_content" android:layout_width="match_parent"
+				android:text="@string/dropGoalString"></TextView>
+			<EditText android:layout_height="wrap_content" android:inputType="number"
+				android:layout_width="match_parent" android:text="@string/dropGoalValue"
+				android:id="@+id/dropGoalValueETRugby"></EditText>
+
+			<!-- Number of players input -->
+			<TextView android:layout_height="wrap_content"
+				android:layout_width="match_parent" android:text="@string/numOfPlayersString"
+				android:id="@+id/numOfPlayersTVRugby" />
+			<EditText android:layout_width="match_parent" android:inputType="number"
+				android:layout_height="wrap_content" android:text="@string/numOfPlayersGaelic"
+				android:id="@+id/numOfPlayersETRugby" />
+
+			<!-- Minutes per half input -->
+			<TextView android:layout_height="wrap_content"
+				android:text="@string/minutesPerHalfString" android:layout_width="match_parent"
+				android:id="@+id/minutesPerHalfTVRugby" />
+			<EditText android:layout_width="match_parent" android:inputType="number"
+				android:layout_height="wrap_content" android:id="@+id/minutesPerHalfETRugby"
+				android:text="@string/minutesPerHalfRugby" />
+
+			<!-- Referee Name input -->
+			<TextView android:layout_height="wrap_content" android:text="@string/refereeNameString"
+				android:layout_width="match_parent" android:id="@+id/refereeNameTVRugby" />
+			<AutoCompleteTextView android:layout_width="match_parent"
+				android:completionThreshold="1" android:layout_height="wrap_content"
+				android:textColor="@color/black" android:id="@+id/refereeNameAutoTVRugby"
+				android:text="@string/Empty" android:hint="@string/optional"/>
+
+			<!-- Match type input -->
+			<RadioGroup android:layout_width="fill_parent"
+				android:layout_height="wrap_content" android:orientation="vertical"
+				android:id="@+id/radioGroupRugby">
+
+				<TextView android:id="@+id/typeTVRugby"
+					android:layout_height="wrap_content" android:text="@string/TypeString"
+					android:layout_width="match_parent" />
+				<RadioButton android:layout_width="wrap_content"
+					android:text="@string/friendlyString" android:layout_height="wrap_content"
+					android:id="@+id/friendlyRadioBNRugby" />
+				<RadioButton android:layout_width="wrap_content"
+					android:text="@string/leagueString" android:id="@+id/leagueRadioBNRugby"
+					android:layout_height="wrap_content" />
+				<RadioButton android:layout_width="wrap_content"
+					android:text="@string/CupString" android:layout_height="wrap_content"
+					android:id="@+id/cupRadioBNRugby" />
+			</RadioGroup>
+
+			<!-- League/Cup name input -->
+			<TextView android:layout_height="wrap_content"
+				android:text="@string/leagueCupNameString" android:layout_width="match_parent"
+				android:id="@+id/leagueCupNameTVRugby" />
+			<AutoCompleteTextView
+				android:completionThreshold="1" android:layout_height="wrap_content"
+				android:layout_width="match_parent" android:text="@string/Empty"
+				android:textColor="@color/black" android:id="@+id/leagueCupNameAutoTVRugby" 
+				android:hint="@string/optional"/>
+
+			<!-- Create match button -->
+			<Button android:layout_height="wrap_content"
+				android:layout_width="match_parent" android:id="@+id/createMatchBNRugby"
+				android:text="@string/createMatchString" />
+
+
+		</LinearLayout>
+	</ScrollView>
+</LinearLayout>
