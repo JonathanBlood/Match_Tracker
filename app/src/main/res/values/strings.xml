@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+	<string name="football_activity">Football Match</string>
+    <string name="gaelic_activity">Gaelic Match</string>
+    <string name="hurling_activity">Hurling Match</string>
+    <string name="rugby_activity">Rugby Match</string>
+    <string name="statistics_activity">Statistics</string>
+    <string name="exit">Exit</string>
+    <string name="football__pre_activity">Football: Pre Match Info</string>
+    <string name="gaelic__pre_activity">Gaelic: Pre Match Info</string>
+    <string name="hurling__pre_activity">Hurling: Pre Match Info</string>
+    <string name="rugby__pre_activity">Rugby: Pre Match Info</string>
+    <string name="sports_football">Football</string>
+    <string name="sports_gaelic">Gaelic</string>
+    <string name="sports_hurling">Hurling</string>
+    <string name="sports_Rugby">Rugby</string>
+    <string name="statistics_menu">Statistics Menu</string>
+    <string name="hello">Hello World, MainMenu!</string>
+    <string name="app_name">Match Tracker</string>
+	<string name="title_home">Home</string>
+    <string name="start">Start</string>
+    <string name="stop">Stop</string>
+    <string name="time">0:00</string>
+    <string name="goal">Goal</string>
+    <string name="matchInfo">\n Match Information: </string>
+    <string name="footballBNString">Create football match</string>
+    <string name="gaelicBNString">Create gaelic football match</string>
+    <string name="hurlingBNString">Create hurling match</string>
+    <string name="rugbyBNString">Create rugby match</string>
+    <string name="viewTableBNString">View table</string>
+    <string name="team1TV">Team 1:</string>
+    <string name="Empty"></string>
+    <string name="team2TV">Team 2:</string>
+    <string name="friendlyString">Friendly</string>
+    <string name="CupString">Cup</string>
+    <string name="leagueString">League</string>
+    <string name="TypeString">Type:</string>
+    <string name="VenueString">Venue:</string>
+    <string name="numOfPlayersString">Number of Players:</string>
+    <string name="numOfPlayers">11</string>
+    <string name="minutesPerHalfString">Minutes Per Half:</string>
+    <string name="minutesPerHalfTime">45</string>
+    <string name="refereeNameString">Enter Referee Name:</string>
+    <string name="createMatchString">Create Match</string>
+    <string name="minutesPerHalfGaelic">35</string>
+    <string name="numOfPlayersGaelic">15</string>
+    <string name="leagueCupNameString">League/Cup name:</string>
+    <string name="goalValueString">Goal Value:</string>
+    <string name="goalValue">3</string>
+    <string name="pointValueString">Point value:</string>
+    <string name="pointValue">1</string>
+    <string name="minutesPerHalfRugby">40</string>
+    <string name="tryValueString">Try value:</string>
+    <string name="conversionValueString">Conversion Value:</string>
+    <string name="penaltyValueString">Penalty value:</string>
+    <string name="dropGoalString">Drop goal:</string>
+    <string name="tryValue">5</string>
+    <string name="conversionValue">2</string>
+    <string name="penaltyValue">3</string>
+    <string name="dropGoalValue">3</string>
+    <string name=":">:</string>
+    <string name="teamInvolved">Team Involved:</string>
+    <string name="playerName">Player Name:</string>
+    <string name="createMatchEvent">Create Match Event</string>
+    <string name="cancel">Cancel</string>
+    <string name="Submit">Submit</string> 
+    <string name="undoEvent">Undo Last Event</string>
+    <string name="MatchEvents"> \n Match Events: </string>
+    <string name="redCard">Red Card</string>
+    <string name="yellowCard">Yellow Card</string>
+    <string name="injury">Injury</string>
+    <string name="substitution">Substitution</string>
+    <string name="Point">Point</string>
+    <string name="Try">Try</string>
+    <string name="Conversion">Conversion</string>
+    <string name="Penalty">Penalty</string>
+    <string name="DropGoal">Drop Goal</string>
+    <string name="player1">Player 1:</string>
+    <string name="player2">Player 2:</string>
+    <string name="wins">W</string>
+    <string name="draws">D</string>
+    <string name="losses">L</string>
+    <string name="win">Win</string>
+    <string name="draw">Draw</string>
+    <string name="loss">Loss</string>
+    <string name="sortByDate">Sort by date</string>
+    <string name="sortByTeamName">Sort by team name</string>
+    <string name="vs">VS</string>
+    <string name="pos">P</string>
+    <string name="player">Player</string>
+    <string name="score">Score</string>
+    <string name="team">TEAM</string>
+    <string name="points">PTS</string>
+    <string name="playerStats">Stats</string>
+    <string name="playerStatistics">Player Statistics</string>
+    <string name="playersName">Name</string>
+    <string name="goals">Goals</string>
+    <string name="tries">Tries</string>
+    <string name="conversions">Conversions</string>
+    <string name="dropGoals">Drop Goals</string>
+    <string name="penalties">Penalties</string>
+    <string name="usernameForm">Username:</string>
+    <string name="passwordForm">Password:</string>
+    <string name="LogIn">Log in</string>
+    <string name="pleaseWait">Please wait...</string>
+    <string name="matchSaved">Match saved.</string>
+    <string name="populatingMatches">Populating matches</string>
+    <string name="populatingPlayers">Populating players</string>
+    <string name="populatingLeaderboards">Populating leaderboards</string>
+    <string name="GaelicMatchEventPrompt">Choose a match event</string>
+    <string name="footballMatchEventPrompt">Choose a match event</string>
+    <string name="HurlingMatchEventPrompt">Choose a match event</string>
+    <string name="RugbyMatchEventPrompt">Choose a match event</string>
+    <string name="addMatchEvents">Add Match Events:</string>
+    <string name="finishMatch">Finish Match</string>
+    <string name="previousMatches">Previous Matches</string>
+    <string name="previousMatch">Previous Match</string>
+    <string name="leaderboard">Leaderboard</string>
+    <string name="playerRankings">Player Rankings</string>
+    <string name="nothingToDisplay">No statistics</string>
+    <string name="sortBySport">Sort by sport:</string>
+    <string name="SportPrompt">Choose a sport</string>
+    <string name="eventDetails">Event Details:</string>
+    <string name="fixvalues">Fix input values</string>
+    <string name="validate_name">Pleas  enter a name.</string>
+    <string name="validate_number">Pleas  enter a number.</string>
+    <string name="event_substitution">Substitution</string>
+    <string name="event_blackcard">Black Card</string>
+    <string name="event_try">Try</string>
+    <string name="event_conversion">Conversion</string>
+    <string name="event_penalty">Penalty</string>
+    <string name="event_dropgoal">Drop Goal</string>
+    <string name="event_point">Point</string>
+    <string name="event_goal">Goal</string>
+    <string name="event_redcard">Red Card</string>
+    <string name="event_yellowcard">Yellow Card</string>
+    <string name="event_none">None</string>
+    <string name="event_freekick">Free Kick</string>
+    <string name="event_throwin">Throw In</string>
+    <string name="event_offside">Offside</string>
+    <string name="event_shotsaved">Shot Saved</string>
+    <string name="event_shotwide">Shot Wide</string>
+    <string name="event_sidelinekick">Sideline Kick</string>
+    <string name="event_sidelinepuck">Sideline Puck</string>
+    <string name="event_freepuck">Free Puck</string>
+    <string name="event_corner">Corner</string>
+    <string name="event_knockon">Knock On</string>
+    <string name="event_ruck">Ruck</string>
+    <string name="event_lineout">Lineout</string>
+    <string name="event_scrum">Scrum</string>
+
+
+
+    <string-array name="footballMatchEvent_array">
+    	<item>None</item>
+        <item>Goal</item>
+        <item>Red Card</item>
+        <item>Yellow Card</item>
+        <item>Injury</item>
+        <item>Substitution</item>
+        <item>Penalty</item>
+        <item>Free Kick</item>
+        <item>Throw In</item>
+        <item>Offside</item>
+        <item>Shot Saved</item>
+        <item>Shot Wide</item>
+        <item>Corner</item>
+    </string-array>
+
+    <string-array name="GaelicMatchEvent_array">
+    	<item>None</item>
+        <item>Goal</item>
+        <item>Point</item>
+        <item>Red Card</item>
+        <item>Yellow Card</item>
+        <item>Black Card</item>
+        <item>Injury</item>
+        <item>Substitution</item>
+        <item>Sideline Kick</item>
+        <item>Throw In</item>
+        <item>Penalty</item>
+        <item>Free Kick</item>
+        <item>Shot Saved</item>
+        <item>Shot Wide</item>
+    </string-array>
+
+    <string-array name="HurlingMatchEvent_array">
+    	<item>None</item>
+        <item>Goal</item>
+        <item>Point</item>
+        <item>Red Card</item>
+        <item>Yellow Card</item>
+        <item>Black Card</item>
+        <item>Injury</item>
+        <item>Substitution</item>
+        <item>Sideline Puck</item>
+        <item>Throw In</item>
+        <item>Penalty</item>
+        <item>Free Puck</item>
+        <item>Shot Saved</item>
+        <item>Shot Wide</item>
+    </string-array>
+
+    <string-array name="RugbyMatchEvent_array">
+    	<item>None</item>
+        <item>Try</item>
+        <item>Conversion</item>
+        <item>Penalty</item>
+        <item>Drop Goal</item>
+        <item>Red Card</item>
+        <item>Yellow Card</item>
+        <item>Injury</item>
+        <item>Substitution</item>
+        <item>Knock On</item>
+        <item>Ruck</item>
+        <item>Maul</item>
+        <item>Lineout</item>
+        <item>Scrum</item>
+    </string-array>
+
+    <string-array name="Sport_array">
+   		<item>Sort by sport</item>
+    	<item>Football</item>
+        <item>Gaelic</item>
+        <item>Hurling</item>
+        <item>Rugby</item>
+    </string-array>
+    
+    
+</resources>

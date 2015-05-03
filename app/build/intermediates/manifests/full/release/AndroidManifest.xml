@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.jonathanbloodmatchtracker"
+    android:installLocation="auto"
+    android:versionCode="3"
+    android:versionName="3.0" >
+
+    <uses-sdk
+        android:minSdkVersion="11"
+        android:targetSdkVersion="21" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/icon"
+        android:label="@string/app_name"
+        android:theme="@android:style/Theme.Light" >
+        <activity
+            android:name="com.jonathanbloodmatchtracker.main.MainMenuActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.jonathanbloodmatchtracker.record.FootballPreMatchInfoActivity"
+            android:label="Pre Match Information - Football" >
+        </activity>
+        <activity
+            android:name="com.jonathanbloodmatchtracker.record.GaelicPreMatchInfoActivity"
+            android:label="Pre Match Information - Gaelic Football" >
+        </activity>
+        <activity
+            android:name="com.jonathanbloodmatchtracker.record.HurlingPreMatchInfoActivity"
+            android:label="Pre Match Information - Hurling" >
+        </activity>
+        <activity
+            android:name="com.jonathanbloodmatchtracker.record.RugbyPreMatchInfoActivity"
+            android:label="Pre Match Information - Rugby" >
+        </activity>
+        <activity
+            android:name="com.jonathanbloodmatchtracker.record.FootballMatchActivity"
+            android:label="Match Information Tracker - Football"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.jonathanbloodmatchtracker.record.GaelicMatchActivity"
+            android:label="Match Information Tracker - Gaelic Football"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.jonathanbloodmatchtracker.record.HurlingMatchActivity"
+            android:label="Match Information Tracker - Hurling"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.jonathanbloodmatchtracker.record.RugbyMatchActivity"
+            android:label="Match Information Tracker - Rugby"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.jonathanbloodmatchtracker.statistics.StatisticsMenuActivity"
+            android:label="Statistics Menu" >
+        </activity>
+        <activity
+            android:name="com.jonathanbloodmatchtracker.statistics.LeaderboardActivity"
+            android:label="Leaderboard" >
+        </activity>
+        <activity
+            android:name="com.jonathanbloodmatchtracker.statistics.PlayerStatsActivity"
+            android:label="Player Statistics" >
+        </activity>
+        <activity
+            android:name="com.jonathanbloodmatchtracker.statistics.PreviousMatchesActivity"
+            android:label="Previous Matches" >
+        </activity>
+        <activity
+            android:name="com.jonathanbloodmatchtracker.statistics.MatchActivity"
+            android:label="Match" >
+        </activity>
+    </application>
+
+</manifest>

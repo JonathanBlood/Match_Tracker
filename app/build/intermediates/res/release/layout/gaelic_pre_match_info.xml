@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:bootstrapbutton="http://schemas.android.com/apk/res-auto"
+              xmlns:fontawesometext="http://schemas.android.com/apk/res-auto"
+              android:layout_width="fill_parent"
+              android:layout_height="fill_parent"
+              android:background="@color/backgroundgrey"
+              android:orientation="vertical" >
+
+    <include layout="@layout/dashboard" />
+
+    <ScrollView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/ScrollView01"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_margin="10dp"
+        android:background="@color/white" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:orientation="vertical" >
+
+            <!-- Team 1 Input -->
+
+            <TextView
+                android:id="@+id/team1TVGaelic"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="10dp"
+                android:textStyle="bold"
+                android:text="@string/team1TV" />
+
+            <AutoCompleteTextView
+                android:id="@+id/team1AutoTVGaelic"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:completionThreshold="1"
+                android:text="@string/Empty"
+                android:textColor="@color/black" />
+
+            <!-- Team 2 Input -->
+
+            <TextView
+                android:id="@+id/team2TVGaelic"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:text="@string/team2TV" />
+
+            <AutoCompleteTextView
+                android:id="@+id/team2AutoTVGaelic"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:completionThreshold="1"
+                android:text="@string/Empty"
+                android:textColor="@color/black" />
+
+            <!-- Venue Input -->
+
+            <TextView
+                android:id="@+id/venueTVGaelic"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:text="@string/VenueString" />
+
+            <AutoCompleteTextView
+                android:id="@+id/venueAutoTVGaelic"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:completionThreshold="1"
+                android:text="@string/Empty"
+                android:textColor="@color/black" />
+
+            <!-- Goal Value Input -->
+
+            <TextView
+                android:id="@+id/goalValueTVGaelic"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:text="@string/goalValueString" >
+            </TextView>
+
+            <EditText
+                android:id="@+id/goalValueETGaelic"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/goalValue" >
+            </EditText>
+
+            <!-- Point Value Input -->
+
+            <TextView
+                android:id="@+id/pointValueTVGaelic"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:text="@string/pointValueString" >
+            </TextView>
+
+            <EditText
+                android:id="@+id/pointValueETGaelic"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/pointValue" >
+            </EditText>
+
+            <!-- Number of players Input -->
+
+            <TextView
+                android:id="@+id/numOfPlayersTVGaelic"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:text="@string/numOfPlayersString" />
+
+            <EditText
+                android:id="@+id/numOfPlayersETGaelic"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/numOfPlayersGaelic" />
+
+            <!-- Minutes per half Input -->
+
+            <TextView
+                android:id="@+id/minutesPerHalfTVGaelic"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:text="@string/minutesPerHalfString" />
+
+            <EditText
+                android:id="@+id/minutesPerHalfETGaelic"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/minutesPerHalfGaelic" />
+
+            <!-- Referee Name Input -->
+
+            <TextView
+                android:id="@+id/refereeNameTVGaelic"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:text="@string/refereeNameString" />
+
+            <AutoCompleteTextView
+                android:id="@+id/refereeNameAutoTVGaelic"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:completionThreshold="1"
+                android:text="@string/Empty"
+                android:textColor="@color/black" />
+
+            <!-- Match Type Input -->
+
+            <RadioGroup
+                android:id="@+id/radioGroupGaelic"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/typeTVGaelic"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:text="@string/TypeString" />
+
+                <RadioButton
+                    android:id="@+id/friendlyRadioBNGaelic"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:text="@string/friendlyString" />
+
+                <RadioButton
+                    android:id="@+id/leagueRadioBNGaelic"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:text="@string/leagueString" />
+
+                <RadioButton
+                    android:id="@+id/cupRadioBNGaelic"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:text="@string/CupString" />
+            </RadioGroup>
+
+            <!-- League/Cup name Input -->
+
+            <TextView
+                android:id="@+id/leagueCupNameTVGaelic"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:text="@string/leagueCupNameString" />
+
+            <AutoCompleteTextView
+                android:id="@+id/leagueCupNameAutoTVGaelic"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:completionThreshold="1"
+                android:text="@string/Empty"
+                android:textColor="@color/black" />
+
+            <!-- Create match button -->
+            <com.beardedhen.androidbootstrap.BootstrapButton
+                android:id="@+id/createMatchBNGaelic"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:text="@string/createMatchString"
+                bootstrapbutton:bb_icon_right="fa-check"
+                bootstrapbutton:bb_type="success"
+                bootstrapbutton:bb_roundedCorners="true"
+                android:textSize="22sp"
+                />
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout><!-- From: file:/D:/AndroidProjects/Match%20Tracker2/app/src/main/res/layout/gaelic_pre_match_info.xml -->

@@ -1,0 +1,2 @@
+D:\AndroidProjects\Match Tracker2\app\build\intermediates\classes\debug
+D:\AndroidProjects\Match Tracker2\app\build\intermediates\pre-dexed\debug\classes-a1ab158f895c941d56b0858ff3c39f9d0d8ffe92.jar

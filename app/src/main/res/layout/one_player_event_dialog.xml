@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:bootstrapbutton="http://schemas.android.com/apk/res-auto"
+              xmlns:fontawesometext="http://schemas.android.com/apk/res-auto"
+              android:layout_width="fill_parent"
+              android:layout_height="match_parent"
+              android:minWidth="250dp"
+              android:background="@color/white"
+              android:orientation="vertical">
+
+    <!-- Player name involved in event. -->
+    <TextView android:layout_height="wrap_content"
+              android:text="@string/playerName"
+              android:textColor="@color/black"
+              android:layout_width="match_parent"
+              android:layout_marginLeft="10dp"
+              android:layout_marginRight="10dp"
+              android:id="@+id/player1EventNameTV" />
+
+    <AutoCompleteTextView android:completionThreshold="1"
+                          android:layout_height="wrap_content"
+                          android:layout_width="match_parent"
+                          android:layout_marginLeft="10dp"
+                          android:layout_marginRight="10dp"
+                          android:textColor="@color/black"
+                          android:text="@string/Empty"
+                          android:id="@+id/player1EventNameAUTOTV" />
+
+    <!-- Team involved in event. -->
+    <RadioGroup android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:textColor="@color/black"
+                android:id="@+id/teamSelEventRG">
+
+        <TextView android:id="@+id/teamSelEventTV"
+                  android:layout_height="wrap_content"
+                  android:text="@string/teamInvolved"
+                  android:textColor="@color/black"
+                  android:layout_width="match_parent" />
+
+        <RadioButton android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     android:id="@+id/team1SelEvent"
+                     android:textColor="@color/black"/>
+
+        <RadioButton android:layout_width="wrap_content"
+                     android:id="@+id/team2SelEvent"
+                     android:layout_height="wrap_content"
+                     android:textColor="@color/black"/>
+
+    </RadioGroup>
+
+    <LinearLayout android:layout_width="match_parent"
+                  android:layout_height="match_parent">
+
+        <com.beardedhen.androidbootstrap.BootstrapButton
+            android:id="@+id/createMatchEventBN"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_margin="10dp"
+            android:text="@string/Submit"
+            bootstrapbutton:bb_icon_right="fa-check-circle"
+            bootstrapbutton:bb_type="success"
+            bootstrapbutton:bb_roundedCorners="true"
+            android:textSize="15sp"
+            />
+
+        <com.beardedhen.androidbootstrap.BootstrapButton
+            android:id="@+id/hideMatchEventBN"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_margin="10dp"
+            android:text="@string/cancel"
+            bootstrapbutton:bb_icon_right="fa-close"
+            bootstrapbutton:bb_type="danger"
+            bootstrapbutton:bb_roundedCorners="true"
+            android:textSize="15sp"
+            />
+
+    </LinearLayout>
+
+</LinearLayout>
