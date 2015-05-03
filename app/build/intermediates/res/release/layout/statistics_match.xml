@@ -1,0 +1,474 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="fill_parent"
+              android:layout_height="fill_parent"
+              android:background="@color/backgroundgrey"
+              android:orientation="vertical" >
+
+    <include layout="@layout/dashboard" />
+
+    <!-- Horizontal linear layout for displaying teams. -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@color/white">
+
+        <!-- Team 1 name -->
+
+        <TextView
+            android:id="@+id/team1NameStatMatch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:paddingLeft="3dip"
+            android:paddingRight="3dip"
+            android:paddingTop="1dip"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:text="@string/Empty"
+            android:textColor="@color/green"
+            android:textStyle="bold" >
+        </TextView>
+
+        <!-- Team 2 name -->
+
+        <TextView
+            android:id="@+id/team2NameStatMatch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="right"
+            android:paddingLeft="3dip"
+            android:paddingRight="3dip"
+            android:paddingTop="1dip"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:text="@string/Empty"
+            android:textColor="@color/red"
+            android:textStyle="bold" >
+        </TextView>
+    </LinearLayout>
+
+    <!-- Horizontal linear layout for displaying scores. -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="10dp"
+        android:background="@color/white">
+
+        <!-- Team 1 score -->
+
+        <TextView
+            android:id="@+id/team1ScoreStatMatch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:layout_weight="1"
+            android:gravity="left"
+            android:paddingLeft="3dip"
+            android:paddingRight="3dip"
+            android:paddingTop="1dip"
+            android:text="@string/Empty"
+            android:textStyle="bold" >
+        </TextView>
+
+        <!-- Delimiter to separate team scores. -->
+
+        <TextView
+            android:id="@+id/delimiterStatMatch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:paddingLeft="3dip"
+            android:paddingRight="3dip"
+            android:paddingTop="1dip"
+            android:text="@string/:"
+            android:textStyle="bold" >
+        </TextView>
+
+        <!-- Team 2 score -->
+
+        <TextView
+            android:id="@+id/team2ScoreStatMatch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:layout_weight="1"
+            android:gravity="right"
+            android:paddingLeft="3dip"
+            android:paddingRight="3dip"
+            android:paddingTop="1dip"
+            android:text="@string/Empty"
+            android:textStyle="bold" >
+        </TextView>
+    </LinearLayout>
+
+    <!-- Vertical linear layout for displaying match info. -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@color/white"
+        android:orientation="vertical" >
+
+        <!-- horizontal linear layout for displaying match ID. -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <!-- Match ID -->
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="5dp"
+                android:layout_weight="1"
+                android:gravity="left"
+                android:paddingLeft="3dip"
+                android:paddingRight="3dip"
+                android:paddingTop="1dip"
+                android:text="Match ID: "
+                android:textStyle="bold" >
+            </TextView>
+
+            <!-- Match ID INPUT -->
+
+            <TextView
+                android:id="@+id/matchIDStatMatch"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="5dp"
+                android:layout_weight="1"
+                android:gravity="right"
+                android:paddingLeft="3dip"
+                android:paddingRight="3dip"
+                android:paddingTop="1dip"
+                android:text="@string/Empty" >
+            </TextView>
+        </LinearLayout>
+
+        <!-- horizontal linear layout for displaying date. -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <!-- Date -->
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="5dp"
+                android:layout_weight="1"
+                android:gravity="left"
+                android:paddingLeft="3dip"
+                android:paddingRight="3dip"
+                android:paddingTop="1dip"
+                android:text="Date: "
+                android:textStyle="bold" >
+            </TextView>
+
+            <!-- Date INPUT -->
+
+            <TextView
+                android:id="@+id/dateStatMatch"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="5dp"
+                android:layout_weight="1"
+                android:gravity="right"
+                android:paddingLeft="3dip"
+                android:paddingRight="3dip"
+                android:paddingTop="1dip"
+                android:text="@string/Empty" >
+            </TextView>
+        </LinearLayout>
+
+        <!-- horizontal linear layout for displaying sport. -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <!-- Sport -->
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="5dp"
+                android:layout_weight="1"
+                android:gravity="left"
+                android:paddingLeft="3dip"
+                android:paddingRight="3dip"
+                android:paddingTop="1dip"
+                android:text="Sport: "
+                android:textStyle="bold" >
+            </TextView>
+
+            <!-- Sport INPUT -->
+
+            <TextView
+                android:id="@+id/sportStatMatch"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="5dp"
+                android:layout_weight="1"
+                android:gravity="right"
+                android:paddingLeft="3dip"
+                android:paddingRight="3dip"
+                android:paddingTop="1dip"
+                android:text="@string/Empty" >
+            </TextView>
+        </LinearLayout>
+
+        <!-- horizontal linear layout for displaying venue. -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <!-- Venue -->
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="5dp"
+                android:layout_weight="1"
+                android:gravity="left"
+                android:paddingLeft="3dip"
+                android:paddingRight="3dip"
+                android:paddingTop="1dip"
+                android:text="Venue: "
+                android:textStyle="bold" >
+            </TextView>
+
+            <!-- Venue INPUT -->
+
+            <TextView
+                android:id="@+id/venueStatMatch"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="5dp"
+                android:layout_weight="1"
+                android:gravity="right"
+                android:paddingLeft="3dip"
+                android:paddingRight="3dip"
+                android:paddingTop="1dip"
+                android:text="@string/Empty" >
+            </TextView>
+        </LinearLayout>
+
+        <!-- horizontal linear layout for displaying referee. -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <!-- Referee -->
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="5dp"
+                android:layout_weight="1"
+                android:gravity="left"
+                android:paddingLeft="3dip"
+                android:paddingRight="3dip"
+                android:paddingTop="1dip"
+                android:text="Referee: "
+                android:textStyle="bold" >
+            </TextView>
+
+            <!-- Referee INPUT -->
+
+            <TextView
+                android:id="@+id/refereeStatMatch"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="5dp"
+                android:layout_weight="1"
+                android:gravity="right"
+                android:paddingLeft="3dip"
+                android:paddingRight="3dip"
+                android:paddingTop="1dip"
+                android:text="@string/Empty" >
+            </TextView>
+        </LinearLayout>
+
+        <!-- horizontal linear layout for displaying type. -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <!-- Type -->
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="5dp"
+                android:layout_weight="1"
+                android:gravity="left"
+                android:paddingLeft="3dip"
+                android:paddingRight="3dip"
+                android:paddingTop="1dip"
+                android:text="Type: "
+                android:textStyle="bold" >
+            </TextView>
+
+            <!-- Type INPUT -->
+
+            <TextView
+                android:id="@+id/typeStatMatch"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="5dp"
+                android:layout_weight="1"
+                android:gravity="right"
+                android:paddingLeft="3dip"
+                android:paddingRight="3dip"
+                android:paddingTop="1dip"
+                android:text="@string/Empty" >
+            </TextView>
+        </LinearLayout>
+
+        <!-- horizontal linear layout for displaying type name. -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <!-- Type name -->
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="5dp"
+                android:layout_weight="1"
+                android:gravity="left"
+                android:paddingLeft="3dip"
+                android:paddingRight="3dip"
+                android:paddingTop="1dip"
+                android:paddingBottom="10dp"
+                android:text="League/Cup name: "
+                android:textStyle="bold" >
+            </TextView>
+
+            <!-- Type name INPUT -->
+
+            <TextView
+                android:id="@+id/typeNameStatMatch"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="5dp"
+                android:layout_weight="1"
+                android:gravity="right"
+                android:paddingLeft="3dip"
+                android:paddingRight="3dip"
+                android:paddingTop="1dip"
+                android:paddingBottom="10dp"
+                android:text="@string/Empty" >
+            </TextView>
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <!-- Match events -->
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:gravity="left"
+        android:paddingLeft="10dip"
+        android:paddingRight="3dip"
+        android:paddingTop="10dp"
+        android:background="@color/white"
+        android:text="Match events: "
+        android:textStyle="bold" >
+    </TextView>
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@color/white"
+        android:layout_marginBottom="10dp"
+        android:fadeScrollbars="false" >
+
+        <!-- Match events INPUT -->
+
+        <TextView
+            android:id="@+id/matchEventsStatMatch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="5dp"
+            android:gravity="left"
+            android:paddingLeft="3dip"
+            android:paddingRight="3dip"
+            android:paddingTop="1dip"
+            android:background="@color/white"
+            android:text="@string/Empty" >
+        </TextView>
+    </ScrollView>
+
+</LinearLayout><!-- From: file:/D:/AndroidProjects/Match%20Tracker2/app/src/main/res/layout/statistics_match.xml -->

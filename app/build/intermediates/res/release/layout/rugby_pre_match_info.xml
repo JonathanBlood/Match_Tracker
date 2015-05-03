@@ -1,0 +1,267 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:bootstrapbutton="http://schemas.android.com/apk/res-auto"
+              xmlns:fontawesometext="http://schemas.android.com/apk/res-auto"
+              android:layout_width="fill_parent"
+              android:layout_height="fill_parent"
+              android:background="@color/backgroundgrey"
+              android:orientation="vertical" >
+
+    <include layout="@layout/dashboard" />
+
+    <ScrollView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/ScrollView01"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_margin="10dp"
+        android:background="@color/white">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:orientation="vertical" >
+
+            <!-- Team 1 input -->
+
+            <TextView
+                android:id="@+id/team1TVRugby"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="10dp"
+                android:textStyle="bold"
+                android:text="@string/team1TV" />
+
+            <AutoCompleteTextView
+                android:id="@+id/team1AutoTVRugby"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:completionThreshold="1"
+                android:text="@string/Empty"
+                android:textColor="@color/black" />
+
+            <!-- Team 2 input -->
+
+            <TextView
+                android:id="@+id/team2TVRugby"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:text="@string/team2TV" />
+
+            <AutoCompleteTextView
+                android:id="@+id/team2AutoTVRugby"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:completionThreshold="1"
+                android:text="@string/Empty"
+                android:textColor="@color/black" />
+
+            <!-- Venue input -->
+
+            <TextView
+                android:id="@+id/venueTVRugby"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:text="@string/VenueString" />
+
+            <AutoCompleteTextView
+                android:id="@+id/venueAutoTVRugby"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:completionThreshold="1"
+                android:text="@string/Empty"
+                android:textColor="@color/black" />
+
+            <!-- Try value input -->
+
+            <TextView
+                android:id="@+id/tryValueTVRugby"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:text="@string/tryValueString" >
+            </TextView>
+
+            <EditText
+                android:id="@+id/tryValueETRugby"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/tryValue" >
+            </EditText>
+
+            <!-- COnversion value input -->
+
+            <TextView
+                android:id="@+id/conversionValueTVRugby"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:text="@string/conversionValueString" >
+            </TextView>
+
+            <EditText
+                android:id="@+id/conversionValueETRugby"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/conversionValue" >
+            </EditText>
+
+            <!-- Penalty value input -->
+
+            <TextView
+                android:id="@+id/penaltyValueTVRugby"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:text="@string/penaltyValueString" >
+            </TextView>
+
+            <EditText
+                android:id="@+id/penaltyValueETRugby"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:text="@string/penaltyValue" >
+            </EditText>
+
+            <!-- Drop goal value input -->
+
+            <TextView
+                android:id="@+id/dropGoalValueTVRugby"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:text="@string/dropGoalString" >
+            </TextView>
+
+            <EditText
+                android:id="@+id/dropGoalValueETRugby"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/dropGoalValue" >
+            </EditText>
+
+            <!-- Number of players input -->
+
+            <TextView
+                android:id="@+id/numOfPlayersTVRugby"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:text="@string/numOfPlayersString" />
+
+            <EditText
+                android:id="@+id/numOfPlayersETRugby"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/numOfPlayersGaelic" />
+
+            <!-- Minutes per half input -->
+
+            <TextView
+                android:id="@+id/minutesPerHalfTVRugby"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:text="@string/minutesPerHalfString" />
+
+            <EditText
+                android:id="@+id/minutesPerHalfETRugby"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/minutesPerHalfRugby" />
+
+            <!-- Referee Name input -->
+
+            <TextView
+                android:id="@+id/refereeNameTVRugby"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:text="@string/refereeNameString" />
+
+            <AutoCompleteTextView
+                android:id="@+id/refereeNameAutoTVRugby"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:completionThreshold="1"
+                android:text="@string/Empty"
+                android:textColor="@color/black" />
+
+            <!-- Match type input -->
+
+            <RadioGroup
+                android:id="@+id/radioGroupRugby"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/typeTVRugby"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:text="@string/TypeString" />
+
+                <RadioButton
+                    android:id="@+id/friendlyRadioBNRugby"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:text="@string/friendlyString" />
+
+                <RadioButton
+                    android:id="@+id/leagueRadioBNRugby"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:text="@string/leagueString" />
+
+                <RadioButton
+                    android:id="@+id/cupRadioBNRugby"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:text="@string/CupString" />
+            </RadioGroup>
+
+            <!-- League/Cup name input -->
+
+            <TextView
+                android:id="@+id/leagueCupNameTVRugby"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:text="@string/leagueCupNameString" />
+
+            <AutoCompleteTextView
+                android:id="@+id/leagueCupNameAutoTVRugby"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:completionThreshold="1"
+                android:textStyle="bold"
+                android:text="@string/Empty"
+                android:textColor="@color/black" />
+
+            <!-- Create match button -->
+            <com.beardedhen.androidbootstrap.BootstrapButton
+                android:id="@+id/createMatchBNRugby"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:text="@string/createMatchString"
+                bootstrapbutton:bb_icon_right="fa-check"
+                bootstrapbutton:bb_type="success"
+                bootstrapbutton:bb_roundedCorners="true"
+                android:textSize="22sp"
+                />
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout><!-- From: file:/D:/AndroidProjects/Match%20Tracker2/app/src/main/res/layout/rugby_pre_match_info.xml -->

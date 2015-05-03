@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:bootstrapbutton="http://schemas.android.com/apk/res-auto"
+              xmlns:fontawesometext="http://schemas.android.com/apk/res-auto"
+              android:layout_width="fill_parent"
+              android:layout_height="fill_parent"
+              android:background="@color/backgroundgrey"
+              android:orientation="vertical" >
+
+    <include layout="@layout/dashboard" />
+
+    <ScrollView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/ScrollView01"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_margin="10dp"
+        android:background="@color/white">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:orientation="vertical" >
+
+            <!-- Team 1 Input -->
+
+            <TextView
+                android:id="@+id/team1TVFootball"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="10dp"
+                android:textStyle="bold"
+                android:text="@string/team1TV" />
+
+            <AutoCompleteTextView
+                android:id="@+id/team1AutoTVFootball"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:completionThreshold="1"
+                android:text="@string/Empty"
+                android:textColor="@color/black" />
+
+            <!-- Team 2 Input -->
+
+            <TextView
+                android:id="@+id/team2TVFootball"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:text="@string/team2TV" />
+
+            <AutoCompleteTextView
+                android:id="@+id/team2AutoTVFootball"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:completionThreshold="1"
+                android:text="@string/Empty"
+                android:textColor="@color/black" />
+
+            <!-- Venue Input -->
+
+            <TextView
+                android:id="@+id/venueTVFootball"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:text="@string/VenueString" />
+
+            <AutoCompleteTextView
+                android:id="@+id/venueAutoTVFootball"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:completionThreshold="1"
+                android:text="@string/Empty"
+                android:textColor="@color/black" />
+
+            <!-- Number of Players Input -->
+
+            <TextView
+                android:id="@+id/numOfPlayersTVFootball"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:text="@string/numOfPlayersString" />
+
+            <EditText
+                android:id="@+id/numOfPlayersETFootball"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/numOfPlayers" />
+
+            <!-- Minutes Per Half Input -->
+
+            <TextView
+                android:id="@+id/minutesPerHalfTVFootball"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:text="@string/minutesPerHalfString" />
+
+            <EditText
+                android:id="@+id/minutesPerHalfETFootball"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/minutesPerHalfTime" />
+
+            <!-- Referee Name Input -->
+
+            <TextView
+                android:id="@+id/refereeNameTVFootball"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:text="@string/refereeNameString" />
+
+            <AutoCompleteTextView
+                android:id="@+id/refereeNameAutoTVFootball"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:completionThreshold="1"
+                android:text="@string/Empty"
+                android:textColor="@color/black" />
+
+            <!-- Match type Input -->
+
+            <RadioGroup
+                android:id="@+id/radioGroupFootball"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/typeTVFootball"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:text="@string/TypeString" />
+
+                <RadioButton
+                    android:id="@+id/friendlyRadioBNFootball"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:text="@string/friendlyString" />
+
+                <RadioButton
+                    android:id="@+id/leagueRadioBNFootball"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:text="@string/leagueString" />
+
+                <RadioButton
+                    android:id="@+id/cupRadioBNFootball"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:text="@string/CupString" />
+            </RadioGroup>
+
+            <!-- League/Cup name Input -->
+
+            <TextView
+                android:id="@+id/leagueCupNameTVFootball"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:text="@string/leagueCupNameString" />
+
+            <AutoCompleteTextView
+                android:id="@+id/leagueCupNameAutoTVFootball"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:completionThreshold="1"
+                android:text="@string/Empty"
+                android:textColor="@color/black" />
+
+            <!-- Create match button -->
+
+            <com.beardedhen.androidbootstrap.BootstrapButton
+                android:id="@+id/createMatchBNFootball"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:text="@string/createMatchString"
+                bootstrapbutton:bb_icon_right="fa-check"
+                bootstrapbutton:bb_type="success"
+                bootstrapbutton:bb_roundedCorners="true"
+                android:textSize="22sp"
+                />
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout><!-- From: file:/D:/AndroidProjects/Match%20Tracker2/app/src/main/res/layout/football_pre_match_info.xml -->

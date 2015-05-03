@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:fontawesometext="http://schemas.android.com/apk/res-auto"
+              android:layout_width="fill_parent"
+              android:layout_height="fill_parent"
+              android:orientation="vertical" >
+
+    <include layout="@layout/dashboard" />
+
+    <!-- DASHBOARD START -->
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical" >
+        >
+
+        <com.jonathanbloodmatchtracker.layout.DashboardLayout
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="#ffffffff"
+            android:orientation="vertical" >
+
+            <Button
+                android:id="@+id/dashboard_football_button"
+                style="@style/DashboardButton"
+                android:background="@drawable/button_state"
+                android:drawableTop="@drawable/football_default"
+                android:text="@string/football_activity" />
+
+            <Button
+                android:id="@+id/dashboard_gaelic_button"
+                style="@style/DashboardButton"
+                android:background="@drawable/button_state"
+                android:drawableTop="@drawable/gaelic_default"
+                android:text="@string/gaelic_activity" />
+
+            <Button
+                android:id="@+id/dashboard_hurling_button"
+                style="@style/DashboardButton"
+                android:background="@drawable/button_state"
+                android:drawableTop="@drawable/hurling_default"
+                android:text="@string/hurling_activity" />
+
+            <Button
+                android:id="@+id/dashboard_rugby_button"
+                style="@style/DashboardButton"
+                android:background="@drawable/button_state"
+                android:drawableTop="@drawable/rugby_default"
+                android:text="@string/rugby_activity" />
+
+            <com.beardedhen.androidbootstrap.FontAwesomeText
+                android:id="@+id/dashboard_statistics_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                fontawesometext:fa_icon="fa-bar-chart"
+                android:textSize="70sp"
+                />
+
+            <com.beardedhen.androidbootstrap.FontAwesomeText
+                android:id="@+id/dashboard_exit_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                fontawesometext:fa_icon="fa-close"
+                android:textSize="70sp"
+                />
+
+        </com.jonathanbloodmatchtracker.layout.DashboardLayout>
+    </LinearLayout>
+    <!-- DASHBOARD END -->
+
+</LinearLayout>

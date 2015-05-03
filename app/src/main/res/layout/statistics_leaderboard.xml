@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="fill_parent"
+              android:layout_height="fill_parent"
+              android:background="@color/backgroundgrey"
+              android:orientation="vertical" >
+
+    <include layout="@layout/dashboard" />
+
+    <Spinner
+        android:id="@+id/sportSpinnerLeaderboard"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:prompt="@string/SportPrompt" >
+    </Spinner>
+
+    <!-- Listview Header -->
+
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_height="40dip"
+        android:layout_marginLeft="10dp"
+        android:layout_marginBottom="1dp"
+        android:layout_marginRight="10dp"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:background="@color/headergrey" >
+
+        <!-- Leaderboard Rank Position -->
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="5dp"
+            android:layout_weight="2"
+            android:gravity="left"
+            android:text="@string/pos"
+            android:textStyle="bold" />
+
+        <!-- Team -->
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:gravity="left"
+            android:text="@string/team"
+            android:textStyle="bold" />
+
+        <!-- Wins -->
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="2"
+            android:gravity="left"
+            android:text="@string/wins"
+            android:textStyle="bold" />
+
+        <!-- Draws -->
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="2"
+            android:gravity="left"
+            android:text="@string/draws"
+            android:textStyle="bold" />
+
+        <!-- Losses -->
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="2"
+            android:gravity="left"
+            android:text="@string/losses"
+            android:textStyle="bold" />
+
+        <!-- Points -->
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginRight="5dp"
+            android:layout_weight="2"
+            android:gravity="right"
+            android:text="@string/points"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/android:list"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@color/white"
+        android:layout_marginBottom="10dp"
+        />
+
+    <TextView
+        android:id="@+id/android:empty"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="10dp"
+        android:background="@color/white"
+        android:gravity="center"
+        android:text="@string/nothingToDisplay"
+        android:textStyle="bold" />
+
+</LinearLayout>

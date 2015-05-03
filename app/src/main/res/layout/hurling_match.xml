@@ -1,0 +1,302 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:bootstrapbutton="http://schemas.android.com/apk/res-auto"
+              xmlns:fontawesometext="http://schemas.android.com/apk/res-auto"
+              android:layout_width="fill_parent"
+              android:layout_height="fill_parent"
+              android:background="@color/backgroundgrey"
+              android:orientation="vertical" >
+
+    <include layout="@layout/dashboard" />
+
+    <!-- Finish Match button -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:background="@color/white">
+
+        <com.beardedhen.androidbootstrap.BootstrapButton
+            android:id="@+id/finishMatchHM"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:text="@string/finishMatch"
+            bootstrapbutton:bb_icon_right="fa-save"
+            bootstrapbutton:bb_type="success"
+            bootstrapbutton:bb_roundedCorners="true"
+            android:textSize="15sp"
+            />
+
+    </LinearLayout>
+
+
+    <!-- Horizontal linear layout for displaying teams. -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@color/white">
+
+        <!-- Team 1 name -->
+
+        <TextView
+            android:id="@+id/team1NameTVHM"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="1"
+            android:text="TextView"
+            android:textColor="@color/green"
+            android:textStyle="bold" >
+        </TextView>
+
+        <!-- Team 2 name -->
+
+        <TextView
+            android:id="@+id/team2NameTVHM"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:layout_weight="1"
+            android:gravity="right"
+            android:text="TextView"
+            android:textColor="@color/red"
+            android:textStyle="bold" >
+        </TextView>
+    </LinearLayout>
+
+    <!-- Horizontal linear layout for displaying scores. -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="10dp"
+        android:background="@color/white">
+
+        <!-- Team 1 Goal -->
+
+        <TextView
+            android:id="@+id/team1GoalTVHM"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="right"
+            android:text="@string/Empty"
+            android:textStyle="bold" >
+        </TextView>
+
+        <!-- Delimiter to goals and points value. -->
+
+        <TextView
+            android:id="@+id/delimiter1TVHM"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:text="@string/:"
+            android:textStyle="bold" >
+        </TextView>
+
+        <!-- Team 1 Point -->
+
+        <TextView
+            android:id="@+id/team1PointTVHM"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="left"
+            android:text="@string/Empty"
+            android:textStyle="bold" >
+        </TextView>
+
+        <!-- Delimiter to separate team scores. -->
+
+        <TextView
+            android:id="@+id/delimiter2TVHM"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:text="@string/:"
+            android:textStyle="bold" >
+        </TextView>
+
+        <!-- Team 2 Goal -->
+
+        <TextView
+            android:id="@+id/team2GoalTVHM"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="right"
+            android:text="@string/Empty"
+            android:textStyle="bold" >
+        </TextView>
+
+        <!-- Delimiter to goals and points value. -->
+
+        <TextView
+            android:id="@+id/delimiter3TVHM"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:text="@string/:"
+            android:textStyle="bold" >
+        </TextView>
+
+        <!-- Team 2 Point -->
+
+        <TextView
+            android:id="@+id/team2PointTVHM"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="left"
+            android:text="@string/Empty"
+            android:textStyle="bold" >
+        </TextView>
+    </LinearLayout>
+
+    <!-- Horizontal linear layout for start,pause and time -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:padding="10dp"
+        android:background="@color/white">
+
+        <!-- Start/resume time button -->
+
+        <com.beardedhen.androidbootstrap.BootstrapButton
+            android:id="@+id/startButtonHM"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/start"
+            bootstrapbutton:bb_icon_right="fa-play"
+            bootstrapbutton:bb_type="success"
+            bootstrapbutton:bb_roundedCorners="false"
+            android:textSize="15sp"
+            />
+
+        <!-- Timer -->
+
+        <Chronometer
+            android:id="@+id/chronometerHM"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:background="@color/headergrey"
+            android:gravity="center" />
+
+        <!-- Pause time button -->
+
+        <com.beardedhen.androidbootstrap.BootstrapButton
+            android:id="@+id/stopButtonHM"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/stop"
+            bootstrapbutton:bb_icon_right="fa-stop"
+            bootstrapbutton:bb_type="danger"
+            bootstrapbutton:bb_roundedCorners="false"
+            android:textSize="15sp"
+            />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/matchEventsTVHM"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:paddingLeft="10dp"
+        android:background="@color/white"
+        android:text="@string/MatchEvents"
+        android:textStyle="bold" >
+    </TextView>
+
+    <!-- Horizontal linear layout for match events. -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="10dp"
+        android:paddingBottom="10dp"
+        android:background="@color/white">
+
+        <Spinner
+            android:id="@+id/matchEventSpinnerHM"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="1"
+            android:prompt="@string/GaelicMatchEventPrompt" >
+        </Spinner>
+
+        <!-- UndoEvent button -->
+
+        <com.beardedhen.androidbootstrap.BootstrapButton
+            android:id="@+id/undoEventButtonHM"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginRight="10dp"
+            android:text="@string/undoEvent"
+            bootstrapbutton:bb_icon_right="fa-undo"
+            bootstrapbutton:bb_type="info"
+            bootstrapbutton:bb_roundedCorners="true"
+            android:textSize="10sp"
+            />
+
+    </LinearLayout>
+
+    <!-- Display Match Information -->
+
+    <TextView
+        android:id="@+id/matchInfosTVHM"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@color/white"
+        android:text="@string/matchInfo"
+        android:textStyle="bold" >
+    </TextView>
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="10dp"
+        android:background="@color/white"
+        android:fadeScrollbars="false" >
+
+        <!-- TextView to display match information -->
+
+        <TextView
+            android:id="@+id/matchInfoTVHM"
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:text="@string/Empty" >
+        </TextView>
+    </ScrollView>
+
+</LinearLayout>

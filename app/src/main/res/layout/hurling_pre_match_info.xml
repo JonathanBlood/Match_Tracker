@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:bootstrapbutton="http://schemas.android.com/apk/res-auto"
+              xmlns:fontawesometext="http://schemas.android.com/apk/res-auto"
+              android:layout_width="fill_parent"
+              android:layout_height="fill_parent"
+              android:background="@color/backgroundgrey"
+              android:orientation="vertical" >
+
+    <include layout="@layout/dashboard" />
+
+    <ScrollView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/ScrollView01"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_margin="10dp"
+        android:background="@color/white">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:orientation="vertical" >
+
+            <!-- Team 1 input -->
+
+            <TextView
+                android:id="@+id/team1TVHurling"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="10dp"
+                android:textStyle="bold"
+                android:text="@string/team1TV" />
+
+            <AutoCompleteTextView
+                android:id="@+id/team1AutoTVHurling"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:completionThreshold="1"
+                android:text="@string/Empty"
+                android:textColor="@color/black" />
+
+            <!-- Team 2 input -->
+
+            <TextView
+                android:id="@+id/team2TVHurling"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:text="@string/team2TV" />
+
+            <AutoCompleteTextView
+                android:id="@+id/team2AutoTVHurling"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:completionThreshold="1"
+                android:text="@string/Empty"
+                android:textColor="@color/black" />
+
+            <!-- Venue input -->
+
+            <TextView
+                android:id="@+id/venueTVHurling"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:text="@string/VenueString" />
+
+            <AutoCompleteTextView
+                android:id="@+id/venueAutoTVHurling"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:completionThreshold="1"
+                android:text="@string/Empty"
+                android:textColor="@color/black" />
+
+            <!-- Goal value input -->
+
+            <TextView
+                android:id="@+id/goalValueTVGaelic"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:text="@string/goalValueString" >
+            </TextView>
+
+            <EditText
+                android:id="@+id/goalValueETGaelic"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/goalValue" >
+            </EditText>
+
+            <!-- Point Value input -->
+
+            <TextView
+                android:id="@+id/pointValueTVGaelic"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:text="@string/pointValueString" >
+            </TextView>
+
+            <EditText
+                android:id="@+id/pointValueETGaelic"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/pointValue" >
+            </EditText>
+
+            <!-- Number of Players input -->
+
+            <TextView
+                android:id="@+id/numOfPlayersTVHurling"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:text="@string/numOfPlayersString" />
+
+            <EditText
+                android:id="@+id/numOfPlayersETHurling"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/numOfPlayersGaelic" />
+
+            <!-- Minutes per half input -->
+
+            <TextView
+                android:id="@+id/minutesPerHalfTVHurling"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:text="@string/minutesPerHalfString" />
+
+            <EditText
+                android:id="@+id/minutesPerHalfETHurling"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/minutesPerHalfGaelic" />
+
+            <!-- Referee name input -->
+
+            <TextView
+                android:id="@+id/refereeNameTVHurling"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:text="@string/refereeNameString" />
+
+            <AutoCompleteTextView
+                android:id="@+id/refereeNameAutoTVHurling"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:completionThreshold="1"
+                android:text="@string/Empty"
+                android:textColor="@color/black" />
+
+            <!-- Match type input -->
+
+            <RadioGroup
+                android:id="@+id/radioGroupHurling"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/typeTVHurling"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:text="@string/TypeString" />
+
+                <RadioButton
+                    android:id="@+id/friendlyRadioBNHurling"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:text="@string/friendlyString" />
+
+                <RadioButton
+                    android:id="@+id/leagueRadioBNHurling"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:text="@string/leagueString" />
+
+                <RadioButton
+                    android:id="@+id/cupRadioBNHurling"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:text="@string/CupString" />
+            </RadioGroup>
+
+            <!-- League/Cup name input -->
+
+            <TextView
+                android:id="@+id/leagueCupNameTVHurling"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:text="@string/leagueCupNameString" />
+
+            <AutoCompleteTextView
+                android:id="@+id/leagueCupNameAutoTVHurling"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:completionThreshold="1"
+                android:text="@string/Empty"
+                android:textColor="@color/black" />
+
+            <!-- Create match button -->
+            <com.beardedhen.androidbootstrap.BootstrapButton
+                android:id="@+id/createMatchBNHurling"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:text="@string/createMatchString"
+                bootstrapbutton:bb_icon_right="fa-check"
+                bootstrapbutton:bb_type="success"
+                bootstrapbutton:bb_roundedCorners="true"
+                android:textSize="22sp"
+                />
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

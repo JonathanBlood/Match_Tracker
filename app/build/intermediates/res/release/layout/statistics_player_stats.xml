@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="fill_parent"
+              android:layout_height="fill_parent"
+              android:background="@color/backgroundgrey"
+              android:orientation="vertical" >
+
+    <include layout="@layout/dashboard" />
+
+    <!-- Listview Header -->
+
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_height="40dip"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:background="@color/headergrey"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="1dp"
+        android:layout_marginRight="10dp" >
+
+        <!-- Player Name -->
+
+        <TextView
+            android:id="@+id/position_player_ranks"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_marginLeft="5dip"
+            android:gravity="left"
+            android:text="@string/playersName"
+            android:textStyle="bold" />
+
+        <!-- Player Stats -->
+
+        <TextView
+            android:id="@+id/player_score_player_ranks"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:paddingRight="5dip"
+            android:text="@string/playerStats"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/android:list"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="10dp"
+        android:background="@color/white"/>
+
+    <TextView
+        android:id="@+id/android:empty"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="10dp"
+        android:background="@color/white"
+        android:gravity="center"
+        android:text="@string/nothingToDisplay"
+        android:textStyle="bold" />
+
+</LinearLayout><!-- From: file:/D:/AndroidProjects/Match%20Tracker2/app/src/main/res/layout/statistics_player_stats.xml -->

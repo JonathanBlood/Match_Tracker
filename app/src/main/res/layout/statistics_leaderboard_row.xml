@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="fill_parent"
+              android:layout_height="?android:attr/listPreferredItemHeight"
+              android:background="#ffffffff" >
+
+    <!-- Leaderboard position -->
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:orientation="vertical"
+        android:background="@color/white">
+
+        <!-- First line -->
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/position_leaderboard"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_marginRight="5dp"
+                android:layout_weight="2"
+                android:layout_marginLeft="5dp"
+                android:textStyle="bold"
+                android:gravity="left"/>
+
+            <!-- Team name -->
+
+            <TextView
+                android:id="@+id/team_name_leaderboard"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:ellipsize="end"
+                android:textStyle="bold"
+                android:gravity="left"/>
+
+            <!-- Wins -->
+
+            <TextView
+                android:id="@+id/wins_leaderboard"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:gravity="left" />
+
+            <!-- Draws -->
+
+            <TextView
+                android:id="@+id/draws_leaderboard"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:gravity="left" />
+
+            <!-- Losses -->
+
+            <TextView
+                android:id="@+id/losses_leaderboard"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:gravity="left" />
+
+            <!-- Total points -->
+
+            <TextView
+                android:id="@+id/total_points_leaderboard"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="5dp"
+                android:layout_weight="2"
+                android:gravity="right"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <!-- Second line -->
+    </LinearLayout>
+
+</LinearLayout>

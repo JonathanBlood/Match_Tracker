@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="fill_parent"
+              android:layout_height="fill_parent"
+              android:layout_marginLeft="10dp"
+              android:layout_marginRight="10dp"
+              android:background="@color/white">
+
+    <!-- Player name -->
+    <TextView
+        android:id="@+id/player_name_playerStat"
+        android:layout_width="170dip"
+        android:layout_height="fill_parent"
+        android:gravity="center_vertical"
+        android:textStyle="bold"
+        android:ellipsize="marquee"
+        android:singleLine="true"
+        android:background="@color/white"
+        android:paddingRight="50dp"
+        android:paddingLeft="10dp"
+        android:layout_marginLeft="10dp"
+        />
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginRight="10dp"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:background="@color/white">
+
+        <!-- First line -->
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+
+            <!-- Goals -->
+            <TextView
+                android:id="@+id/goals_playerStat"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:ellipsize="marquee"
+                android:singleLine="true"
+                android:layout_marginRight="2dip"
+                />
+
+            <!-- Points -->
+            <TextView
+                android:id="@+id/points_playerStat"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="left"
+                android:ellipsize="marquee"
+                android:singleLine="true"
+                android:layout_marginRight="2dip"
+                />
+
+        </LinearLayout>
+
+        <!-- Second line -->
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+
+            <!-- Tries -->
+            <TextView
+                android:id="@+id/tries_playerStat"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:ellipsize="marquee"
+                android:singleLine="true"
+                android:layout_marginRight="2dip"
+                />
+
+            <!-- Conversions -->
+            <TextView
+                android:id="@+id/conversions_playerStat"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="left"
+                android:ellipsize="marquee"
+                android:singleLine="true"
+                android:layout_marginRight="2dip"
+                />
+
+        </LinearLayout>
+
+        <!-- Third line -->
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+
+            <!-- Drop goals -->
+            <TextView
+                android:id="@+id/dropGoals_playerStat"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:ellipsize="marquee"
+                android:singleLine="true"
+                android:layout_marginRight="2dip"
+                />
+
+            <!-- Penalties -->
+            <TextView
+                android:id="@+id/penalties_playerStat"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="left"
+                android:ellipsize="marquee"
+                android:singleLine="true"
+                android:layout_marginRight="2dip"
+                />
+
+        </LinearLayout>
+
+    </LinearLayout>
+</LinearLayout>

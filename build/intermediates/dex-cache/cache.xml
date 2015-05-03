@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        jar="D:\AndroidProjects\Match Tracker2\app\build\intermediates\exploded-aar\com.beardedhen\androidbootstrap\1.2.1\classes.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="5b26560d38c480aa5c8413a9f43bd205afb123d7">
+        <dex dex="D:\AndroidProjects\Match Tracker2\app\build\intermediates\pre-dexed\debug\classes-a1ab158f895c941d56b0858ff3c39f9d0d8ffe92.jar" />
+    </item>
+
+</items>

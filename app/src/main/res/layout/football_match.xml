@@ -1,0 +1,263 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:bootstrapbutton="http://schemas.android.com/apk/res-auto"
+              xmlns:fontawesometext="http://schemas.android.com/apk/res-auto"
+              android:layout_width="fill_parent"
+              android:layout_height="fill_parent"
+              android:background="@color/backgroundgrey"
+              android:orientation="vertical" >
+
+    <include layout="@layout/dashboard" />
+
+    <!-- Finish Match button -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:background="@color/white">
+
+        <com.beardedhen.androidbootstrap.BootstrapButton
+            android:id="@+id/finishMatchFM"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:text="@string/finishMatch"
+            bootstrapbutton:bb_icon_right="fa-save"
+            bootstrapbutton:bb_type="success"
+            bootstrapbutton:bb_roundedCorners="true"
+            android:textSize="15sp"
+            />
+
+    </LinearLayout>
+
+    <!-- Horizontal linear layout for displaying teams. -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@color/white">
+
+        <!-- Team 1 name -->
+
+        <TextView
+            android:id="@+id/team1NameTVFM"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:text="TextView"
+            android:textColor="@color/green"
+            android:textStyle="bold" >
+        </TextView>
+
+        <!-- Team 2 name -->
+
+        <TextView
+            android:id="@+id/team2NameTVFM"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_weight="1"
+            android:gravity="right"
+            android:text="TextView"
+            android:textColor="@color/red"
+            android:textStyle="bold" >
+        </TextView>
+    </LinearLayout>
+
+    <!-- Horizontal linear layout for displaying scores. -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="10dp"
+        android:background="@color/white">
+
+        <!-- Team 1 score -->
+
+        <TextView
+            android:id="@+id/team1GoalTVFM"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginBottom="10dp"
+            android:gravity="left"
+            android:text="@string/Empty"
+            android:textStyle="bold" >
+        </TextView>
+
+        <!-- Delimiter to separate team scores. -->
+
+        <TextView
+            android:id="@+id/delimiterTVFM"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:text="@string/:"
+            android:textStyle="bold" >
+        </TextView>
+
+        <!-- Team 2 score -->
+
+        <TextView
+            android:id="@+id/team2GoalTVFM"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="5dp"
+            android:gravity="right"
+            android:text="@string/Empty"
+            android:textStyle="bold" >
+        </TextView>
+    </LinearLayout>
+
+    <!-- Horizontal linear layout for start,pause and time -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:padding="10dp"
+        android:background="@color/white">
+
+        <!-- Start/resume time button -->
+
+        <com.beardedhen.androidbootstrap.BootstrapButton
+            android:id="@+id/startButtonFM"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/start"
+            bootstrapbutton:bb_icon_right="fa-play"
+            bootstrapbutton:bb_type="success"
+            bootstrapbutton:bb_roundedCorners="false"
+            android:textSize="15sp"
+            />
+
+        <!-- Timer -->
+
+        <Chronometer
+            android:id="@+id/chronometerFM"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:background="@color/headergrey"
+            android:gravity="center" />
+
+        <!-- Pause time button -->
+
+        <com.beardedhen.androidbootstrap.BootstrapButton
+            android:id="@+id/stopButtonFM"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/stop"
+            bootstrapbutton:bb_icon_right="fa-stop"
+            bootstrapbutton:bb_type="danger"
+            bootstrapbutton:bb_roundedCorners="false"
+            android:textSize="15sp"
+            />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/matchEventsTVFM"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:paddingLeft="10dp"
+        android:text="@string/MatchEvents"
+        android:background="@color/white"
+        android:textStyle="bold" >
+    </TextView>
+
+    <!-- Horizontal linear layout for match events. -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="10dp"
+        android:paddingBottom="10dp"
+        android:background="@color/white">
+
+        <Spinner
+            android:id="@+id/matchEventSpinnerFM"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginLeft="10dp"
+            android:prompt="@string/footballMatchEventPrompt" >
+        </Spinner>
+
+        <!-- UndoEvent button -->
+
+        <com.beardedhen.androidbootstrap.BootstrapButton
+            android:id="@+id/undoEventButtonFM"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginRight="10dp"
+            android:text="@string/undoEvent"
+            bootstrapbutton:bb_icon_right="fa-undo"
+            bootstrapbutton:bb_type="info"
+            bootstrapbutton:bb_roundedCorners="true"
+            android:textSize="10sp"
+            />
+
+    </LinearLayout>
+
+    <!-- Display Match Information -->
+
+    <TextView
+        android:id="@+id/matchInfosTVFM"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:text="@string/matchInfo"
+        android:textStyle="bold"
+        android:background="@color/white">
+    </TextView>
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="10dp"
+        android:background="@color/white"
+        android:fadeScrollbars="false" >
+
+        <!-- TextView to display match information -->
+
+        <TextView
+            android:id="@+id/matchInfoTVFM"
+            android:layout_marginLeft="10dp"
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:text="@string/Empty" >
+        </TextView>
+    </ScrollView>
+
+</LinearLayout>

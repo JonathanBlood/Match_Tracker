@@ -1,0 +1,11 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/action_settings"
+        android:orderInCategory="100"
+        android:showAsAction="never"
+        android:title="@string/action_settings"
+        />
+
+</menu>
+<!-- From: file:/C:/Users/Jamie/Android%20studioProjects/Android-Bootstrap/AndroidBootstrap/res/menu/main.xml --><!-- From: file:/D:/AndroidProjects/Match%20Tracker2/app/build/intermediates/exploded-aar/com.beardedhen/androidbootstrap/1.2.1/res/menu/main.xml -->

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- From: file:/D:/AndroidProjects/Match%20Tracker2/app/build/intermediates/exploded-aar/com.beardedhen/androidbootstrap/1.2.1/res/values-sw720dp-land-v13/values.xml -->
+    <eat-comment/>
+    <dimen name="activity_horizontal_margin">128dp</dimen>
+</resources>

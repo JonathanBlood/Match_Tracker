@@ -1,0 +1,360 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- From: file:/D:/AndroidProjects/Match%20Tracker2/app/src/main/res/values/strings.xml -->
+    <eat-comment/>
+    <string-array name="GaelicMatchEvent_array">
+    	<item>None</item>
+        <item>Goal</item>
+        <item>Point</item>
+        <item>Red Card</item>
+        <item>Yellow Card</item>
+        <item>Black Card</item>
+        <item>Injury</item>
+        <item>Substitution</item>
+        <item>Sideline Kick</item>
+        <item>Throw In</item>
+        <item>Penalty</item>
+        <item>Free Kick</item>
+        <item>Shot Saved</item>
+        <item>Shot Wide</item>
+    </string-array>
+    <string-array name="HurlingMatchEvent_array">
+    	<item>None</item>
+        <item>Goal</item>
+        <item>Point</item>
+        <item>Red Card</item>
+        <item>Yellow Card</item>
+        <item>Black Card</item>
+        <item>Injury</item>
+        <item>Substitution</item>
+        <item>Sideline Puck</item>
+        <item>Throw In</item>
+        <item>Penalty</item>
+        <item>Free Puck</item>
+        <item>Shot Saved</item>
+        <item>Shot Wide</item>
+    </string-array>
+    <string-array name="RugbyMatchEvent_array">
+    	<item>None</item>
+        <item>Try</item>
+        <item>Conversion</item>
+        <item>Penalty</item>
+        <item>Drop Goal</item>
+        <item>Red Card</item>
+        <item>Yellow Card</item>
+        <item>Injury</item>
+        <item>Substitution</item>
+        <item>Knock On</item>
+        <item>Ruck</item>
+        <item>Maul</item>
+        <item>Lineout</item>
+        <item>Scrum</item>
+    </string-array>
+    <string-array name="Sport_array">
+   		<item>Sort by sport</item>
+    	<item>Football</item>
+        <item>Gaelic</item>
+        <item>Hurling</item>
+        <item>Rugby</item>
+    </string-array>
+    <string-array name="footballMatchEvent_array">
+    	<item>None</item>
+        <item>Goal</item>
+        <item>Red Card</item>
+        <item>Yellow Card</item>
+        <item>Injury</item>
+        <item>Substitution</item>
+        <item>Penalty</item>
+        <item>Free Kick</item>
+        <item>Throw In</item>
+        <item>Offside</item>
+        <item>Shot Saved</item>
+        <item>Shot Wide</item>
+        <item>Corner</item>
+    </string-array>
+    <!-- From: file:/D:/AndroidProjects/Match%20Tracker2/app/src/main/res/values/colours.xml -->
+    <eat-comment/>
+    <color name="backgroundgrey">#E8E8E8</color>
+    <!-- From: file:/D:/AndroidProjects/Match%20Tracker2/app/build/intermediates/exploded-aar/com.beardedhen/androidbootstrap/1.2.1/res/values/values.xml -->
+    <eat-comment/>
+    <color name="bbutton_danger">#ffd9534f</color>
+    <color name="bbutton_danger_disabled">#a5d9534f</color>
+    <color name="bbutton_danger_disabled_edge">#a5d43f3a</color>
+    <color name="bbutton_danger_edge">#ffd43f3a</color>
+    <color name="bbutton_danger_pressed">#ffd2322d</color>
+    <color name="bbutton_danger_pressed_edge">#ffac2925</color>
+    <color name="bbutton_default">#ffffffff</color>
+    <color name="bbutton_default_disabled">#a5ffffff</color>
+    <color name="bbutton_default_disabled_edge">#a5cccccc</color>
+    <color name="bbutton_default_edge">#ffcccccc</color>
+    <color name="bbutton_default_pressed">#ffebebeb</color>
+    <color name="bbutton_default_pressed_edge">#ffadadad</color>
+    <color name="bbutton_edittext_border">#ccc</color>
+    <color name="bbutton_edittext_disabled">#ffe0e0e0</color>
+    <color name="bbutton_info">#ff5bc0de</color>
+    <color name="bbutton_info_disabled">#a55bc0de</color>
+    <color name="bbutton_info_disabled_edge">#a546b8da</color>
+    <color name="bbutton_info_edge">#ff46b8da</color>
+    <color name="bbutton_info_pressed">#ff39b3d7</color>
+    <color name="bbutton_info_pressed_edge">#ff269abc</color>
+    <color name="bbutton_inverse">#ff0a0a0a</color>
+    <color name="bbutton_inverse_disabled">#a50a0a0a</color>
+    <color name="bbutton_inverse_disabled_edge">#a5141414</color>
+    <color name="bbutton_inverse_edge">#ff141414</color>
+    <color name="bbutton_inverse_pressed">#ff1f1f1f</color>
+    <color name="bbutton_inverse_pressed_edge">#ff292929</color>
+    <color name="bbutton_primary">#ff428bca</color>
+    <color name="bbutton_primary_disabled">#a5428bca</color>
+    <color name="bbutton_primary_disabled_edge">#a5357ebd</color>
+    <color name="bbutton_primary_edge">#ff357ebd</color>
+    <color name="bbutton_primary_pressed">#ff3276b1</color>
+    <color name="bbutton_primary_pressed_edge">#ff285e8e</color>
+    <color name="bbutton_success">#ff5cb85c</color>
+    <color name="bbutton_success_disabled">#a55cb85c</color>
+    <color name="bbutton_success_disabled_edge">#a54cae4c</color>
+    <color name="bbutton_success_edge">#ff4cae4c</color>
+    <color name="bbutton_success_pressed">#ff47a447</color>
+    <color name="bbutton_success_pressed_edge">#ff398439</color>
+    <color name="bbutton_warning">#fff0ad4e</color>
+    <color name="bbutton_warning_disabled">#a5f0ad4e</color>
+    <color name="bbutton_warning_disabled_edge">#a5eea236</color>
+    <color name="bbutton_warning_edge">#ffeea236</color>
+    <color name="bbutton_warning_pressed">#ffed9c28</color>
+    <color name="bbutton_warning_pressed_edge">#ffd58512</color>
+    <!-- From: file:/D:/AndroidProjects/Match%20Tracker2/app/src/main/res/values/colours.xml -->
+    <eat-comment/>
+    <color name="black">#000000</color>
+    <color name="blue">#0000ff</color>
+    <!-- From: file:/D:/AndroidProjects/Match%20Tracker2/app/build/intermediates/exploded-aar/com.beardedhen/androidbootstrap/1.2.1/res/values/values.xml -->
+    <eat-comment/>
+    <color name="bthumbnail_background">#ffffffff</color>
+    <color name="bthumbnail_border">#dbdbdb</color>
+    <color name="bthumbnail_font">#7e7e7e</color>
+    <color name="bthumbnail_placeholder">#e9e9e9</color>
+    <!-- From: file:/D:/AndroidProjects/Match%20Tracker2/app/src/main/res/values/colours.xml -->
+    <eat-comment/>
+    <color name="green">#00ff00</color>
+    <color name="headergrey">#F8F8F8</color>
+    <color name="red">#ff0000</color>
+    <color name="white">#FFFFFF</color>
+    <declare-styleable name="BootstrapButton"><attr format="string" name="bb_type"/><attr format="string" name="bb_icon_left"/><attr format="string" name="bb_icon_right"/><attr format="boolean" name="bb_roundedCorners"/><attr format="string" name="bb_text_alignment"/><attr format="string" name="bb_size"/><attr format="string" name="bb_text_gravity"/><attr name="android:textSize"/><attr name="android:text"/><attr name="android:enabled"/><attr name="android:layout_width"/><attr name="android:layout_weight"/></declare-styleable>
+    <declare-styleable name="BootstrapCircleThumbnail"><attr format="integer" name="bct_image"/><attr format="string" name="bct_size"/><attr format="boolean" name="bct_minimal"/><attr name="android:text"/></declare-styleable>
+    <declare-styleable name="BootstrapEditText"><attr format="boolean" name="be_roundedCorners"/><attr format="string" name="be_state"/><attr name="android:textSize"/><attr name="android:text"/><attr name="android:hint"/><attr name="android:enabled"/></declare-styleable>
+    <declare-styleable name="BootstrapThumbnail"><attr format="boolean" name="bt_roundedCorners"/><attr format="integer" name="bt_image"/><attr format="dimension" name="bt_width"/><attr format="dimension" name="bt_height"/><attr format="dimension" name="bt_inside_padding"/><attr name="android:text"/></declare-styleable>
+    <declare-styleable name="FontAwesomeText"><attr format="string" name="fa_icon"/></declare-styleable>
+    <!-- From: file:/D:/AndroidProjects/Match%20Tracker2/app/build/intermediates/exploded-aar/com.beardedhen/androidbootstrap/1.2.1/res/values/values.xml -->
+    <eat-comment/>
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="bbuton_rounded_corner_radius">5dp</dimen>
+    <dimen name="bthumbnail_rounded_corner_radius">3dp</dimen>
+    <dimen name="padding_large">16dp</dimen>
+    <dimen name="padding_medium">12dp</dimen>
+    <dimen name="padding_micro">4dp</dimen>
+    <dimen name="padding_small">8dp</dimen>
+    <!-- From: file:/D:/AndroidProjects/Match%20Tracker2/app/src/main/res/values/strings.xml -->
+    <eat-comment/>
+    <string name=":">:</string>
+    <string name="Conversion">Conversion</string>
+    <string name="CupString">Cup</string>
+    <string name="DropGoal">Drop Goal</string>
+    <string name="Empty"/>
+    <string name="GaelicMatchEventPrompt">Choose a match event</string>
+    <string name="HurlingMatchEventPrompt">Choose a match event</string>
+    <string name="LogIn">Log in</string>
+    <string name="MatchEvents"> \n Match Events: </string>
+    <string name="Penalty">Penalty</string>
+    <string name="Point">Point</string>
+    <string name="RugbyMatchEventPrompt">Choose a match event</string>
+    <string name="SportPrompt">Choose a sport</string>
+    <string name="Submit">Submit</string>
+    <string name="Try">Try</string>
+    <string name="TypeString">Type:</string>
+    <string name="VenueString">Venue:</string>
+    <!-- From: file:/D:/AndroidProjects/Match%20Tracker2/app/build/intermediates/exploded-aar/com.beardedhen/androidbootstrap/1.2.1/res/values/values.xml -->
+    <eat-comment/>
+    <string name="action_settings">Settings</string>
+    <!-- From: file:/D:/AndroidProjects/Match%20Tracker2/app/src/main/res/values/strings.xml -->
+    <eat-comment/>
+    <string name="addMatchEvents">Add Match Events:</string>
+    <string name="app_name">Match Tracker</string>
+    <string name="cancel">Cancel</string>
+    <string name="conversionValue">2</string>
+    <string name="conversionValueString">Conversion Value:</string>
+    <string name="conversions">Conversions</string>
+    <string name="createMatchEvent">Create Match Event</string>
+    <string name="createMatchString">Create Match</string>
+    <string name="draw">Draw</string>
+    <string name="draws">D</string>
+    <string name="dropGoalString">Drop goal:</string>
+    <string name="dropGoalValue">3</string>
+    <string name="dropGoals">Drop Goals</string>
+    <string name="eventDetails">Event Details:</string>
+    <string name="event_blackcard">Black Card</string>
+    <string name="event_conversion">Conversion</string>
+    <string name="event_corner">Corner</string>
+    <string name="event_dropgoal">Drop Goal</string>
+    <string name="event_freekick">Free Kick</string>
+    <string name="event_freepuck">Free Puck</string>
+    <string name="event_goal">Goal</string>
+    <string name="event_knockon">Knock On</string>
+    <string name="event_lineout">Lineout</string>
+    <string name="event_none">None</string>
+    <string name="event_offside">Offside</string>
+    <string name="event_penalty">Penalty</string>
+    <string name="event_point">Point</string>
+    <string name="event_redcard">Red Card</string>
+    <string name="event_ruck">Ruck</string>
+    <string name="event_scrum">Scrum</string>
+    <string name="event_shotsaved">Shot Saved</string>
+    <string name="event_shotwide">Shot Wide</string>
+    <string name="event_sidelinekick">Sideline Kick</string>
+    <string name="event_sidelinepuck">Sideline Puck</string>
+    <string name="event_substitution">Substitution</string>
+    <string name="event_throwin">Throw In</string>
+    <string name="event_try">Try</string>
+    <string name="event_yellowcard">Yellow Card</string>
+    <string name="exit">Exit</string>
+    <string name="finishMatch">Finish Match</string>
+    <string name="fixvalues">Fix input values</string>
+    <string name="footballBNString">Create football match</string>
+    <string name="footballMatchEventPrompt">Choose a match event</string>
+    <string name="football__pre_activity">Football: Pre Match Info</string>
+    <string name="football_activity">Football Match</string>
+    <string name="friendlyString">Friendly</string>
+    <string name="gaelicBNString">Create gaelic football match</string>
+    <string name="gaelic__pre_activity">Gaelic: Pre Match Info</string>
+    <string name="gaelic_activity">Gaelic Match</string>
+    <string name="goal">Goal</string>
+    <string name="goalValue">3</string>
+    <string name="goalValueString">Goal Value:</string>
+    <string name="goals">Goals</string>
+    <string name="hello">Hello World, MainMenu!</string>
+    <!-- From: file:/D:/AndroidProjects/Match%20Tracker2/app/build/intermediates/exploded-aar/com.beardedhen/androidbootstrap/1.2.1/res/values/values.xml -->
+    <eat-comment/>
+    <string name="hello_world">Hello world!</string>
+    <!-- From: file:/D:/AndroidProjects/Match%20Tracker2/app/src/main/res/values/strings.xml -->
+    <eat-comment/>
+    <string name="hurlingBNString">Create hurling match</string>
+    <string name="hurling__pre_activity">Hurling: Pre Match Info</string>
+    <string name="hurling_activity">Hurling Match</string>
+    <string name="injury">Injury</string>
+    <string name="leaderboard">Leaderboard</string>
+    <string name="leagueCupNameString">League/Cup name:</string>
+    <string name="leagueString">League</string>
+    <string name="loss">Loss</string>
+    <string name="losses">L</string>
+    <string name="matchInfo">\n Match Information: </string>
+    <string name="matchSaved">Match saved.</string>
+    <string name="minutesPerHalfGaelic">35</string>
+    <string name="minutesPerHalfRugby">40</string>
+    <string name="minutesPerHalfString">Minutes Per Half:</string>
+    <string name="minutesPerHalfTime">45</string>
+    <string name="nothingToDisplay">No statistics</string>
+    <string name="numOfPlayers">11</string>
+    <string name="numOfPlayersGaelic">15</string>
+    <string name="numOfPlayersString">Number of Players:</string>
+    <string name="passwordForm">Password:</string>
+    <string name="penalties">Penalties</string>
+    <string name="penaltyValue">3</string>
+    <string name="penaltyValueString">Penalty value:</string>
+    <string name="player">Player</string>
+    <string name="player1">Player 1:</string>
+    <string name="player2">Player 2:</string>
+    <string name="playerName">Player Name:</string>
+    <string name="playerRankings">Player Rankings</string>
+    <string name="playerStatistics">Player Statistics</string>
+    <string name="playerStats">Stats</string>
+    <string name="playersName">Name</string>
+    <string name="pleaseWait">Please wait...</string>
+    <string name="pointValue">1</string>
+    <string name="pointValueString">Point value:</string>
+    <string name="points">PTS</string>
+    <string name="populatingLeaderboards">Populating leaderboards</string>
+    <string name="populatingMatches">Populating matches</string>
+    <string name="populatingPlayers">Populating players</string>
+    <string name="pos">P</string>
+    <string name="previousMatch">Previous Match</string>
+    <string name="previousMatches">Previous Matches</string>
+    <string name="redCard">Red Card</string>
+    <string name="refereeNameString">Enter Referee Name:</string>
+    <string name="rugbyBNString">Create rugby match</string>
+    <string name="rugby__pre_activity">Rugby: Pre Match Info</string>
+    <string name="rugby_activity">Rugby Match</string>
+    <string name="score">Score</string>
+    <string name="sortByDate">Sort by date</string>
+    <string name="sortBySport">Sort by sport:</string>
+    <string name="sortByTeamName">Sort by team name</string>
+    <string name="sports_Rugby">Rugby</string>
+    <string name="sports_football">Football</string>
+    <string name="sports_gaelic">Gaelic</string>
+    <string name="sports_hurling">Hurling</string>
+    <string name="start">Start</string>
+    <string name="statistics_activity">Statistics</string>
+    <string name="statistics_menu">Statistics Menu</string>
+    <string name="stop">Stop</string>
+    <string name="substitution">Substitution</string>
+    <string name="team">TEAM</string>
+    <string name="team1TV">Team 1:</string>
+    <string name="team2TV">Team 2:</string>
+    <string name="teamInvolved">Team Involved:</string>
+    <string name="time">0:00</string>
+    <string name="title_home">Home</string>
+    <string name="tries">Tries</string>
+    <string name="tryValue">5</string>
+    <string name="tryValueString">Try value:</string>
+    <string name="undoEvent">Undo Last Event</string>
+    <string name="usernameForm">Username:</string>
+    <string name="validate_name">Pleas  enter a name.</string>
+    <string name="validate_number">Pleas  enter a number.</string>
+    <string name="viewTableBNString">View table</string>
+    <string name="vs">VS</string>
+    <string name="win">Win</string>
+    <string name="wins">W</string>
+    <string name="yellowCard">Yellow Card</string>
+    <!-- From: file:/D:/AndroidProjects/Match%20Tracker2/app/build/intermediates/exploded-aar/com.beardedhen/androidbootstrap/1.2.1/res/values/values.xml -->
+    <eat-comment/>
+    <style name="AppBaseTheme" parent="android:Theme.Light">
+        <!--
+            Theme customizations available in newer API levels can go in
+            res/values-vXX/styles.xml, while customizations related to
+            backward-compatibility can go here.
+        -->
+    </style>
+    <!-- From: file:/D:/AndroidProjects/Match%20Tracker2/app/src/main/res/values/styles.xml -->
+    <eat-comment/>
+    <style name="DashboardButton">
+		<item name="android:layout_gravity">center_vertical</item>
+		<item name="android:layout_width">wrap_content</item>
+		<item name="android:layout_height">wrap_content</item>
+		<item name="android:gravity">center_horizontal</item>
+		<item name="android:drawablePadding">2dp</item>
+		<item name="android:textSize">14sp</item>
+		<item name="android:textColor">#33B5E5</item>
+		<item name="android:textStyle">bold</item>
+		<item name="android:background">@null</item>
+	</style>
+    <style name="TitleBar">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">45dip</item>
+        <item name="android:orientation">horizontal</item>
+        <item name="android:background">#171717</item>
+    </style>
+    <style name="TitleBarOperation">
+        <item name="android:layout_width">32dip</item>
+        <item name="android:layout_height">32dip</item>
+    </style>
+    <style name="TitleBarText">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">fill_parent</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:textSize"> 18sp </item>
+        <item name="android:paddingLeft">12dip</item>
+        <item name="android:paddingRight">12dip</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">#ffffffff</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:ellipsize">end</item>
+    </style>
+</resources>
