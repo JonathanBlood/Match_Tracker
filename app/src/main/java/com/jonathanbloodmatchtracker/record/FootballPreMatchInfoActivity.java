@@ -1,6 +1,7 @@
 package com.jonathanbloodmatchtracker.record;
 
 import android.app.Activity;
+import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
@@ -12,11 +13,11 @@ import android.widget.RadioButton;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import com.beardedhen.androidbootstrap.BootstrapButton;
 import com.jonathanbloodmatchtracker.database.MatchDbAdapter;
 import com.jonathanbloodmatchtracker.database.TeamDbAdapter;
 import com.jonathanbloodmatchtracker.main.MainMenuActivity;
 import com.jonathanbloodmatchtracker.main.R;
+import com.jonathanbloodmatchtracker.main.Utility;
 
 import java.util.ArrayList;
 
@@ -28,43 +29,14 @@ import java.util.ArrayList;
  */
 public class FootballPreMatchInfoActivity extends Activity {
 
-    /**
-     * On clock listen for radio box selection.
-     */
-    RadioButton.OnClickListener radioBoxOnClickListener = new RadioButton.OnClickListener() {
-
-        @Override
-        public void onClick(View v) {
-
-            // Logic to enable/disable league/cup Name autoTV.
-            if (friendlyRadioBN.isChecked()) {
-                leagueCupNameAutoTV.setEnabled(false);
-            } else if (leagueRadioBN.isChecked()) {
-                leagueCupNameAutoTV.setEnabled(true);
-            } else {
-                leagueCupNameAutoTV.setEnabled(true);
-            }
-        }
-
-    };
-    private RadioButton friendlyRadioBN;
-    private RadioButton leagueRadioBN;
-    private RadioButton cupRadioBN;
     private AutoCompleteTextView team1AutoTV;
     private AutoCompleteTextView team2AutoTV;
     private AutoCompleteTextView venueAutoTV;
     private AutoCompleteTextView refereeNameAutoET;
     private AutoCompleteTextView leagueCupNameAutoTV;
-    private EditText numOfPlayersET, minutesPerHalfET;
-    private BootstrapButton createMatchBN;
-    private int numOfPlayers;
-    private int minutesPerHalf;
-    private String team1;
-    private String team2;
-    private String venue;
-    private String refereeName;
+    private EditText numOfPlayersET;
+    private EditText minutesPerHalfET;
     private String type;
-    private String leagueCupName;
 
     /**
      * Called when the activity is first created.
@@ -131,24 +103,11 @@ public class FootballPreMatchInfoActivity extends Activity {
         refereeNameAutoET = (AutoCompleteTextView) findViewById(R.id.refereeNameAutoTVFootball);
         refereeNameAutoET.setAdapter(refereeAdapter);
 
-        // Type input selection
-        friendlyRadioBN     = (RadioButton) this.findViewById(R.id.friendlyRadioBNFootball);
-        leagueRadioBN       = (RadioButton) this.findViewById(R.id.leagueRadioBNFootball);
-        cupRadioBN          = (RadioButton) this.findViewById(R.id.cupRadioBNFootball);
-        friendlyRadioBN.setOnClickListener(radioBoxOnClickListener);
-        leagueRadioBN.setOnClickListener(radioBoxOnClickListener);
-        cupRadioBN.setOnClickListener(radioBoxOnClickListener);
-        leagueRadioBN.setChecked(true);
-
         // League/Cup Name input.
         leagueCupNameAutoTV = (AutoCompleteTextView) findViewById(R.id.leagueCupNameAutoTVFootball);
         leagueCupNameAutoTV.setAdapter(leagueCupNameAdapter);
 
-        // Create button to submit the above pre match info.
-        // Launches match Activity and passes pre match info to it.
-        createMatchBN = (BootstrapButton) this.findViewById(R.id.createMatchBNFootball);
-        this.createMatchButton();
-
+        type = getString(R.string.friendlyString);
     }
 
     /**
@@ -170,49 +129,70 @@ public class FootballPreMatchInfoActivity extends Activity {
     }
 
     /**
-     * Create match button listener method.
+     * Event type Selection (Cup, Friendly, League)
+     * @param view Radio views
      */
-    private void createMatchButton() {
-        createMatchBN.setOnClickListener(new OnClickListener() {
-            @Override
-            public void onClick(View v) {
+    public void typeSelection(View view) {
 
-                // Check to see if all input elements validate correctly.
-                if (validateForm()) {
-                    team1               = team1AutoTV.getText().toString().trim();
-                    team2               = team2AutoTV.getText().toString().trim();
-                    venue               = venueAutoTV.getText().toString().trim();
-                    leagueCupName       = leagueCupNameAutoTV.getText().toString().trim();
-                    refereeName         = refereeNameAutoET.getText().toString().trim();
-                    numOfPlayers        = Integer.parseInt(numOfPlayersET.getText().toString().trim());
-                    minutesPerHalf      = Integer.parseInt(minutesPerHalfET.getText().toString().trim());
+        // Is the button now checked?
+        boolean checked = ((RadioButton) view).isChecked();
 
-                    if (friendlyRadioBN.isChecked()) {
-                        type = friendlyRadioBN.getText().toString();
-                    } else if (leagueRadioBN.isChecked()) {
-                        type = leagueRadioBN.getText().toString();
-                    } else {
-                        type = cupRadioBN.getText().toString();
-                    }
-
-                    // Launch match Activity and pass data to that Activity.
-                    Intent matchIntent = new Intent(FootballPreMatchInfoActivity.this, FootballMatchActivity.class);
-                    matchIntent.putExtra("Team1", team1);
-                    matchIntent.putExtra("Team2", team2);
-                    matchIntent.putExtra("Venue", venue);
-                    matchIntent.putExtra("LeagueCupName", leagueCupName);
-                    matchIntent.putExtra("RefereeName", refereeName);
-                    matchIntent.putExtra("NumOfPlayers", numOfPlayers);
-                    matchIntent.putExtra("MinutesPerHalf", minutesPerHalf);
-                    matchIntent.putExtra("Type", type);
-                    startActivity(matchIntent);
-
-                } else { // Form didn't validate proper.
-                    Toast.makeText(getApplicationContext(), getString(R.string.fixvalues), Toast.LENGTH_LONG).show();
+        // Check which radio button was clicked
+        switch(view.getId()) {
+            case R.id.friendlyRadioBNFootball:
+                if (checked) {
+                    type = ((RadioButton) view).getText().toString();
+                    leagueCupNameAutoTV.getText().clear();
+                    leagueCupNameAutoTV.setEnabled(false);
                 }
+                break;
+            case R.id.leagueRadioBNFootball:
+                if (checked) {
+                    type = ((RadioButton) view).getText().toString();
+                    leagueCupNameAutoTV.setEnabled(true);
+                }
+                break;
+            case R.id.cupRadioBNFootball:
+                if (checked) {
+                    type = ((RadioButton) view).getText().toString();
+                    leagueCupNameAutoTV.setEnabled(true);
+                }
+                break;
+        }
+    }
 
-            }
-        });
+    /**
+     * When user clicks create match button
+     * @param view Create Match button view
+     */
+    public void createMatch(View view) {
+
+        // Check to see if all input elements validate correctly.
+        if (validateForm()) {
+            String team1            = team1AutoTV.getText().toString().trim();
+            String team2            = team2AutoTV.getText().toString().trim();
+            String venue            = venueAutoTV.getText().toString().trim();
+            String leagueCupName    = leagueCupNameAutoTV.getText().toString().trim();
+            String refereeName      = refereeNameAutoET.getText().toString().trim();
+            int numOfPlayers        = Integer.parseInt(numOfPlayersET.getText().toString().trim());
+            int minutesPerHalf      = Integer.parseInt(minutesPerHalfET.getText().toString().trim());
+
+            // Launch match Activity and pass data to that Activity.
+            Intent matchIntent = new Intent(FootballPreMatchInfoActivity.this, FootballMatchActivity.class);
+            matchIntent.putExtra("Team1", team1);
+            matchIntent.putExtra("Team2", team2);
+            matchIntent.putExtra("Venue", venue);
+            matchIntent.putExtra("LeagueCupName", leagueCupName);
+            matchIntent.putExtra("RefereeName", refereeName);
+            matchIntent.putExtra("NumOfPlayers", numOfPlayers);
+            matchIntent.putExtra("MinutesPerHalf", minutesPerHalf);
+            matchIntent.putExtra("Type", type);
+            startActivity(matchIntent);
+
+        } else { // Form didn't validate proper.
+            Toast.makeText(getApplicationContext(), getString(R.string.fixvalues), Toast.LENGTH_LONG).show();
+        }
+
     }
 
     /**
@@ -221,51 +201,15 @@ public class FootballPreMatchInfoActivity extends Activity {
      * @return true if all validation was successful.
      */
     private boolean validateForm() {
-        return validateAutoTextViewValue(team1AutoTV) && validateAutoTextViewValue(team2AutoTV) &&
-                validateEditTextValue(numOfPlayersET) && validateEditTextValue(minutesPerHalfET);
+        Context context = getApplicationContext();
+        return Utility.validateAutoTextViewValue(team1AutoTV, context) && Utility.validateAutoTextViewValue(team2AutoTV, context) &&
+                Utility.validateEditTextValue(numOfPlayersET, context) && Utility.validateEditTextValue(minutesPerHalfET, context);
 
     }
 
     /**
-     * Validate autoCompleteTextView - non empty.
-     *
-     * @param autoCompleteTextView textview
-     * @return boolean true if validation was successful.
+     * Actionbar onClick Listener.
      */
-    private boolean validateAutoTextViewValue(AutoCompleteTextView autoCompleteTextView) {
-        String value = autoCompleteTextView.getText().toString();
-        if (value.length() == 0) {
-            autoCompleteTextView.setError(getString(R.string.validate_name));
-            return false;
-        }
-        return true;
-    }
-
-    /**
-     * Validate EditText - value is non empty and int.
-     *
-     * @param editText textview
-     * @return boolean true if validation was successful.
-     */
-    private boolean validateEditTextValue(EditText editText) {
-        String value = editText.getText().toString();
-
-        // Check for non empty.
-        if (value.length() == 0) {
-            editText.setError(getString(R.string.validate_number));
-            return false;
-        }
-
-        // Check that value is an int.
-        try {
-            Integer.parseInt(value);
-        } catch (NumberFormatException e) {
-            return false;
-        }
-        return true;
-    }
-
-    // Actionbar onClick Listener.
     private class ActionBarClickListener implements OnClickListener {
         @Override
         public void onClick(View v) {

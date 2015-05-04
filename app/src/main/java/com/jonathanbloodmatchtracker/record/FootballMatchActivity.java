@@ -661,7 +661,9 @@ public class FootballMatchActivity extends Activity {
         });
     }
 
-    //Actionbar onClick Listener.
+    /**
+     * Action bar listener
+     */
     private class ActionBarClickListener implements OnClickListener {
         @Override
         public void onClick(View v) {
@@ -679,7 +681,9 @@ public class FootballMatchActivity extends Activity {
         }
     }
 
-    //Spinner itemSelected listener.
+    /**
+     * Spinner action listener
+     */
     private class SpinnerItemSelectedListener implements OnItemSelectedListener {
 
         public void onItemSelected(AdapterView<?> parent, View view, int pos, long id) {
