@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
               xmlns:bootstrapbutton="http://schemas.android.com/apk/res-auto"
-              xmlns:fontawesometext="http://schemas.android.com/apk/res-auto"
               android:layout_width="fill_parent"
               android:layout_height="fill_parent"
               android:background="@color/backgroundgrey"
@@ -205,28 +204,32 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:textStyle="bold"
-                    android:text="@string/TypeString" />
+                    android:text="@string/TypeString"/>
 
                 <RadioButton
                     android:id="@+id/friendlyRadioBNRugby"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:textStyle="bold"
-                    android:text="@string/friendlyString" />
+                    android:text="@string/friendlyString"
+                    android:checked="true"
+                    android:onClick="typeSelection"/>
 
                 <RadioButton
                     android:id="@+id/leagueRadioBNRugby"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:textStyle="bold"
-                    android:text="@string/leagueString" />
+                    android:text="@string/leagueString"
+                    android:onClick="typeSelection"/>
 
                 <RadioButton
                     android:id="@+id/cupRadioBNRugby"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:textStyle="bold"
-                    android:text="@string/CupString" />
+                    android:text="@string/CupString"
+                    android:onClick="typeSelection"/>
             </RadioGroup>
 
             <!-- League/Cup name input -->
@@ -243,6 +246,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:completionThreshold="1"
+                android:enabled="false"
                 android:textStyle="bold"
                 android:text="@string/Empty"
                 android:textColor="@color/black" />
@@ -259,6 +263,7 @@
                 bootstrapbutton:bb_type="success"
                 bootstrapbutton:bb_roundedCorners="true"
                 android:textSize="22sp"
+                android:onClick="createMatch"
                 />
 
         </LinearLayout>

@@ -129,7 +129,7 @@
                 android:id="@+id/radioGroupFootball"
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
-                android:orientation="vertical" >
+                android:orientation="vertical">
 
                 <TextView
                     android:id="@+id/typeTVFootball"
@@ -143,21 +143,25 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:textStyle="bold"
-                    android:text="@string/friendlyString" />
+                    android:text="@string/friendlyString"
+                    android:checked="true"
+                    android:onClick="typeSelection"/>
 
                 <RadioButton
                     android:id="@+id/leagueRadioBNFootball"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:textStyle="bold"
-                    android:text="@string/leagueString" />
+                    android:text="@string/leagueString"
+                    android:onClick="typeSelection"/>
 
                 <RadioButton
                     android:id="@+id/cupRadioBNFootball"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:textStyle="bold"
-                    android:text="@string/CupString" />
+                    android:text="@string/CupString"
+                    android:onClick="typeSelection"/>
             </RadioGroup>
 
             <!-- League/Cup name Input -->
@@ -173,6 +177,7 @@
                 android:id="@+id/leagueCupNameAutoTVFootball"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:enabled="false"
                 android:completionThreshold="1"
                 android:text="@string/Empty"
                 android:textColor="@color/black" />
@@ -190,6 +195,7 @@
                 bootstrapbutton:bb_type="success"
                 bootstrapbutton:bb_roundedCorners="true"
                 android:textSize="22sp"
+                android:onClick="createMatch"
                 />
 
         </LinearLayout>
